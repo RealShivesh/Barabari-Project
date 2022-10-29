@@ -1,12 +1,12 @@
 <script>
-    export let //
-        title = null,
-        description =
-            "We are a non-profit working to provide quality Tech based mentorship to candidates from underprivileged backgrounds. With one-to-one mentorship and curated training modules, we get them ready for jobs in the Tech sector",
-        url = "https://barabari.nukes.in/";
+	export let //
+		title = null,
+		description =
+			"We are a non-profit working to provide quality Tech based mentorship to candidates from underprivileged backgrounds. With one-to-one mentorship and curated training modules, we get them ready for jobs in the Tech sector",
+		url = "https://barabari.nukes.in/";
 
-    const makeTitle = (title) =>
-        `{makeTitle(title)}${title ? ` | ${title}` : ""}`;
+	const makeTitle = (title) =>
+		`{makeTitle(title)}${title ? ` | ${title}` : ""}`;
 </script>
 
 <!-- Primary Meta Tags -->

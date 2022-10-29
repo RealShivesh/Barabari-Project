@@ -4,7 +4,7 @@ body {
     height: 100%;
     box-sizing: border-box;
     font: lighter 16px helvetica;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    font-family: -apple-system, BlinkMacSystemfont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
 }
 
 a,
@@ -286,16 +286,16 @@ textarea:focus {
     height: 0
 }
 
-.F {
+.f {
     display: flex !important
 }
 
-.F-col {
+.f-col {
     display: flex !important;
     flex-direction: column
 }
 
-.F∑ {
+.fw {
     display: flex !important;
     flex-wrap: wrap
 }

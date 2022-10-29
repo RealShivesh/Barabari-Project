@@ -12,5 +12,9 @@
 		"vite": "^3.1.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"node-sass": "^7.0.3",
+		"svelte-i18n": "^3.4.0",
+		"svelte-preprocess": "^4.10.7"
+	}
 }

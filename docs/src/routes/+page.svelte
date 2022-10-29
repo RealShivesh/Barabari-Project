@@ -16,12 +16,18 @@
         alt="logo"
     />
 </section>
+<section class="fw j-bw" style="background: #fff;">
+    <div id="left-2">LHS</div>
+    <div id="right-2">RHS</div>
+</section>
 
-<style>
-    /* animation: fade 2s linear; */
+<style lang="scss">
     section {
         height: 100vh;
         width: 100vw;
+        &:first-of-type {
+            height: calc(100vh - 40px);
+        }
     }
     img {
         height: 50vh;

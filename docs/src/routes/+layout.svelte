@@ -8,7 +8,7 @@
         <slot />
     </div>
 
-    <footer class="p10 F" style="background: var(--yellow);">
+    <footer class="p10 f" style="background: var(--yellow);">
         <p>
             visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
         </p>
