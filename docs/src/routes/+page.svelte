@@ -1,3 +1,11 @@
+<script>
+    import Meta from "../components/meta.svelte";
+</script>
+
+<svelte:head>
+    <Meta title="Home" />
+</svelte:head>
+
 <section class="hero w-100 h-100 fade tc">
     <div id="hi" class="fade-up">Hi!</div>
     <div id="weare" class="fade-up o-0" style="--delay: 2s;">We are</div>
