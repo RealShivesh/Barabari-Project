@@ -1,26 +1,43 @@
-.fade {
+.fade-out {
+    --delay: 0s;
     will-change: opacity;
-    animation: fade .4s ease-in forwards
+    animation: fade .4s ease-in backwards;
+    animation-delay: var(--delay);
+}
+
+.fade {
+    --delay: 0s;
+    will-change: opacity;
+    animation: fade .4s ease-in forwards;
+    animation-delay: var(--delay);
 }
 
 .fade-right {
+    --delay: 0s;
     will-change: opacity, transform;
-    animation: fade-right .4s ease-in forwards
+    animation: fade-right .4s ease-in forwards;
+    animation-delay: var(--delay);
 }
 
 .fade-left {
+    --delay: 0s;
     will-change: opacity, transform;
-    animation: fade-left .4s ease-in forwards
+    animation: fade-left .4s ease-in forwards;
+    animation-delay: var(--delay);
 }
 
 .fade-down {
+    --delay: 0s;
     will-change: opacity, transform;
-    animation: fade-down .4s ease-in forwards
+    animation: fade-down .4s ease-in forwards;
+    animation-delay: var(--delay);
 }
 
 .fade-up {
+    --delay: 0s;
     will-change: opacity, transform;
-    animation: fade-up .4s ease-in forwards
+    animation: fade-up .4s ease-in forwards;
+    animation-delay: var(--delay);
 }
 
 @keyframes fade {

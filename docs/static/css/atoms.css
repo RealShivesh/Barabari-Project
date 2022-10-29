@@ -198,31 +198,31 @@ textarea:focus {
     font-weight: 700
 }
 
-.†r {
+.tr {
     text-align: right
 }
 
-.†c {
+.tc {
     text-align: center
 }
 
-.†j {
+.tj {
     text-align: justify
 }
 
-.†l {
+.tl {
     text-align: left
 }
 
-.∆-ct {
+.j-ct {
     justify-content: center
 }
 
-.∆-bw {
+.j-bw {
     justify-content: space-between
 }
 
-.∆-ar {
+.j-ar {
     justify-content: space-around
 }
 
@@ -286,16 +286,16 @@ textarea:focus {
     height: 0
 }
 
-.ƒ {
+.F {
     display: flex !important
 }
 
-.ƒ-col {
+.F-col {
     display: flex !important;
     flex-direction: column
 }
 
-.ƒ∑ {
+.F∑ {
     display: flex !important;
     flex-wrap: wrap
 }

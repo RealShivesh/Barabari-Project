@@ -2,6 +2,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"deploy": "npx gh-pages -d build -t true && rm -rf build .svelte*",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
