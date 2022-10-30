@@ -6,7 +6,7 @@
 		url = "https://barabari.nukes.in/";
 
 	const makeTitle = (title) =>
-		`{makeTitle(title)}${title ? ` | ${title}` : ""}`;
+		`The Barabari Project ${title ? `| ${title}` : ""}`;
 </script>
 
 <!-- Primary Meta Tags -->

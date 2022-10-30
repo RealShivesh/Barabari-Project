@@ -1,9 +1,9 @@
-<div class="nav">
+<div class="nav blur p-fix" style="--sz: 8px;--bg: #fff8;">
     <input type="checkbox" id="nav-check" />
     <div class="nav-header">
         <div class="nav-title">Barabari Project</div>
     </div>
-    <div class="nav-btn">
+    <div class="nav-btn p-abs">
         <label for="nav-check">
             <span />
             <span />
@@ -12,11 +12,10 @@
     </div>
 
     <div class="nav-links">
-        <a href="//github.io/jo_geek">Github</a>
-        <a href="http://stackoverflow.com/users/4084003/">Stackoverflow</a>
-        <a href="https://in.linkedin.com/in/jonesvinothjoseph">LinkedIn</a>
-        <a href="https://codepen.io/jo_Geek/">Codepen</a>
-        <a href="https://jsfiddle.net/user/jo_Geek/">JsFiddle</a>
+        <a href="">Get Mentorship</a>
+        <a href="">Be a Mentor</a>
+        <a href="">Join Us!</a>
+        <a href="">Meet the Team</a>
     </div>
 </div>
 
@@ -24,22 +23,21 @@
 <style>
     @keyframes slideIn {
         0% {
-            top: -50px;
+            transform: translateY(-50px);
         }
         100% {
-            top: 0;
+            transform: translateY(0);
         }
     }
     .nav {
-        position: fixed;
-        top: -50px;
-        animation: 0.4s slideIn 5s ease-in-out forwards;
-        height: 50px;
+        top: 0;
+        /* animation: 0.4s slideIn 5s ease-in-out forwards; */
+        height: 0;
         width: 100%;
         z-index: 10;
-        background: var(--yellow);
+        /* transform: translateY(-50px); */
+        will-change: transform;
         color: black;
-        position: relative;
     }
 
     .nav > .nav-header {

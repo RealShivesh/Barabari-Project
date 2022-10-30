@@ -4,18 +4,40 @@
 
 <main class="app">
     <Nav />
-    <div style="position: relative;top:-10px;z-index:1;">
+    <div id="content">
         <slot />
     </div>
 
-    <footer class="p10 f" style="background: var(--yellow);">
-        <p>
-            visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
-        </p>
+    <footer class="p10" style="background: var(--yellow);">
+        <div class="w-100 tc">
+            <h2>The Barabari Project</h2>
+            <h3><i>Universal Access To Quality Jobs</i></h3>
+        </div>
+        <div class="f j-ar fw">
+            <ul>
+                <li>Links1</li>
+                <li>Links2</li>
+                <li>Links3</li>
+            </ul>
+            <ul>
+                <li>Links1</li>
+                <li>Links2</li>
+                <li>Links3</li>
+            </ul>
+            <ul>
+                <li>Links1</li>
+                <li>Links2</li>
+                <li>Links3</li>
+            </ul>
+        </div>
     </footer>
 </main>
 
 <style>
+    #content {
+        z-index: 1;
+        scroll-behavior: smooth;
+    }
     footer {
         width: calc(100% - 20px);
     }
