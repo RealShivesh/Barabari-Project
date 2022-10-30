@@ -1,23 +1,25 @@
-<div class="nav blur p-fix" style="--sz: 8px;--bg: #fff8;">
-    <input type="checkbox" id="nav-check" />
-    <div class="nav-header">
-        <div class="nav-title">Barabari Project</div>
-    </div>
-    <div class="nav-btn p-abs">
-        <label for="nav-check">
-            <span />
-            <span />
-            <span />
-        </label>
-    </div>
+<nav class="p-fix w-100 o-1 blur">
+    <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+            <div class="nav-title">The Barabari Project</div>
+        </div>
+        <div class="nav-btn p-abs">
+            <label for="nav-check">
+                <span />
+                <span />
+                <span />
+            </label>
+        </div>
 
-    <div class="nav-links">
-        <a href="">Get Mentorship</a>
-        <a href="">Be a Mentor</a>
-        <a href="">Join Us!</a>
-        <a href="">Meet the Team</a>
+        <div class="nav-links">
+            <a href="">Get Mentorship</a>
+            <a href="">Be a Mentor</a>
+            <a href="">Join Us!</a>
+            <a href="">Meet the Team</a>
+        </div>
     </div>
-</div>
+</nav>
 
 <!-- wrapper -->
 <style>
@@ -29,15 +31,25 @@
             transform: translateY(0);
         }
     }
-    .nav {
-        top: 0;
+    nav {
         /* animation: 0.4s slideIn 5s ease-in-out forwards; */
+        animation: 0.4s slideIn 1s ease-in-out forwards;
+        transform: translateY(-50px);
+        --sz: 8px;
+        --bg: #fff8;
+        top: 0;
+        z-index: 10;
+    }
+    .nav {
+        display: block;
         height: 0;
         width: 100%;
-        z-index: 10;
-        /* transform: translateY(-50px); */
         will-change: transform;
         color: black;
+
+        background-color: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(2em);
+        backdrop-filter: blur(2em);
     }
 
     .nav > .nav-header {

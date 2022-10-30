@@ -7,11 +7,13 @@
     };
 </script>
 
-<div class="rx10 card" style={`background: var(${typr(type)});`}>
+<div class="rx10 card p10" style={`background: var(${typr(type)});`}>
     <slot />
 </div>
 
 <style>
     .card {
+        min-width: 200px;
+        min-height: 100px;
     }
 </style>
