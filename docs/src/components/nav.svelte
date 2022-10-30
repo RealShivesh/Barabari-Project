@@ -1,4 +1,4 @@
-<nav class="p-fix w-100 o-1 blur">
+<nav class="p-fix w-100 o-50 blur">
     <div class="nav">
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
@@ -22,7 +22,7 @@
 </nav>
 
 <!-- wrapper -->
-<style>
+<style lang="scss">
     @keyframes slideIn {
         0% {
             transform: translateY(-50px);
@@ -32,13 +32,15 @@
         }
     }
     nav {
-        /* animation: 0.4s slideIn 5s ease-in-out forwards; */
-        animation: 0.4s slideIn 1s ease-in-out forwards;
+        animation: 0.4s slideIn 5s ease-in-out forwards;
         transform: translateY(-50px);
         --sz: 8px;
         --bg: #fff8;
         top: 0;
         z-index: 10;
+        &:hover {
+            opacity: 1;
+        }
     }
     .nav {
         display: block;
@@ -50,16 +52,15 @@
         background-color: rgba(255, 255, 255, 0.5);
         -webkit-backdrop-filter: blur(2em);
         backdrop-filter: blur(2em);
-    }
 
-    .nav > .nav-header {
-        display: inline;
-    }
-
-    .nav > .nav-header > .nav-title {
-        display: inline-block;
-        font-size: 22px;
-        padding: 10px 10px 10px 10px;
+        & .nav-header {
+            display: inline;
+            & .nav-title {
+                display: inline-block;
+                font-size: 22px;
+                padding: 10px 10px 10px 10px;
+            }
+        }
     }
 
     .nav > .nav-btn {

@@ -20,7 +20,11 @@
 			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
 		}
 
-		body {}
+		.slash {
+			--color: var(--purple);
+			--angle: 135deg;
+			background: linear-gradient(var(--angle), #fff 0%, #fff 49.9%, var(--color) 50%, var(--color) 100%);
+		}
 	</style>
 
 	%sveltekit.head%

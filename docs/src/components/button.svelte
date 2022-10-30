@@ -6,11 +6,11 @@
 </script>
 
 {#if href}
-    <a href class="button {type}" {...$$restProps}>
+    <a href class="button m10 {type + ' ' + size}" {...$$restProps}>
         <slot />
     </a>
 {:else}
-    <button class="button {type}" {...$$restProps}>
+    <button class="button m10 {type + ' ' + size}" {...$$restProps}>
         <slot />
     </button>
 {/if}
@@ -26,6 +26,19 @@
             text-decoration: none;
         }
         transition: all 0.1s ease;
+    }
+    .md {
+        font-size: 1em;
+    }
+    .lg {
+        font-size: 2em;
+        min-width: 120px;
+    }
+    @media (max-width: 600px) {
+        .lg {
+            font-size: 1em;
+            min-width: 90px;
+        }
     }
     .primary {
         background: var(--yellow);
