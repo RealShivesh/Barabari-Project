@@ -4,6 +4,15 @@
 
 <main class="app">
     <Nav />
+
+    <style>
+        section {
+            width: 100vw;
+            min-height: calc(100vh - 4rem);
+            padding: 2rem 0;
+        }
+    </style>
+
     <div id="content">
         <slot />
     </div>

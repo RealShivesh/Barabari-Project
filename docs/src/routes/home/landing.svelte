@@ -7,7 +7,7 @@
     style="--color:var(--yellow);--angle:{180 - getAngle() + 'deg'};"
 >
     <div id="hi" class="fade-up">
-        <span>Hi! <span style="font-size: 0.8em;">👋</span></span>
+        <span>Hi! <span id="wave">👋</span></span>
     </div>
     <div id="weare" class="fade-up o-0" style="--delay: 2s;">
         <span>We are</span>
@@ -21,6 +21,38 @@
 </section>
 
 <style>
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(14deg);
+        }
+        20% {
+            transform: rotate(-8deg);
+        }
+        30% {
+            transform: rotate(14deg);
+        }
+        40% {
+            transform: rotate(-4deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        60% {
+            transform: rotate(0deg);
+        } /* Reset for the last half to pause */
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    #wave {
+        display: inline-block;
+        font-size: 0.8em;
+        animation: 2.5s wave infinite;
+        transform-origin: 70% 70%;
+    }
     #logo {
         --delay: 4s;
         top: 60%;

@@ -7,4 +7,7 @@
 
 <hr/>
 
-Outreach Website for *The Barabari Project*: temporarily [here](https://plutoniumm.github.io/BarabariProject/)
+<!-- Outreach Website for *The Barabari Project*: temporarily [here](https://plutoniumm.github.io/BarabariProject/) -->
+
+
+<!-- i18n: https://github.com/kaisermann/svelte-i18n/blob/HEAD/docs/Getting%20Started.md -->

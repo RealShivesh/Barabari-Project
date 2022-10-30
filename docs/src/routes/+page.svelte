@@ -6,6 +6,7 @@
 
     import Landing from "./home/landing.svelte";
     import Joinus from "./home/joinus.svelte";
+    import Social from "./home/contact.svelte";
 
     $: getAngle = () =>
         Math.round((Math.atan(innerHeight / innerWidth) * 1800) / Math.PI) / 10;
@@ -18,13 +19,9 @@
 
 <Landing {getAngle} />
 <Joinus {getAngle} />
+<Social />
 
 <!-- Looking for everything you need to make it big in the tech? The
             Barabari Project is your one-stop solution! ❤️ -->
 <style lang="scss">
-    :global(section) {
-        width: 100vw;
-        min-height: calc(100vh - 4rem);
-        padding: 2rem 0;
-    }
 </style>
