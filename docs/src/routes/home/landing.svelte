@@ -11,7 +11,7 @@
         style: "",
         className: `w-100 h-100 fade tc p-rel`,
     }}
-    slash={{ color: "yellow", offset: true }}
+    slash={{ color: "yellow", offset: 180 }}
 >
     <div id="hi" class="fade-up">
         <span>Hi! <span id="wave">👋</span></span>
@@ -25,6 +25,13 @@
         src="/icons/barabari.png"
         alt="logo"
     />
+    <div id="bio" class="p10 tr p-abs" style="bottom:5px;right:5px;">
+        <div class="fw3 m10" id="joinus">
+            Addressing private sector inequality by personalized tech mentorship
+            for candidates from the underprivileged(by caste, income, and
+            gender).
+        </div>
+    </div>
 </Section>
 
 <style>
@@ -81,6 +88,9 @@
         #hi,
         #weare {
             font-size: 64px;
+        }
+        #bio {
+            max-width: 75%;
         }
     }
 </style>

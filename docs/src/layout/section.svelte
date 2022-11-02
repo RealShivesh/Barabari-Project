@@ -10,7 +10,7 @@
         },
         slash = {
             color: "purple",
-            offset: false,
+            offset: 0,
         };
 
     let //
@@ -20,7 +20,7 @@
     $: getStyle = () => {
         // If(slash) calculate angle
         const getAngle = Math.abs(
-            (slash.offset ? 180 : 0) -
+            slash.offset -
                 Math.round(
                     (Math.atan(innerHeight / innerWidth) * 1800) / Math.PI
                 ) /
@@ -41,7 +41,7 @@
 <section class={container.className || ""} style={container.style || ""}>
     <div
         class:slash
-        class="cont w-100 h-100 {main.className || ''}"
+        class="cont w-100 h-100 p-rel {main.className || ''}"
         style={getStyle()}
     >
         <slot />
@@ -53,12 +53,5 @@
         width: 100%;
         min-height: 100vh;
         padding: 2rem 0;
-    }
-    section {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        min-height: 100vh;
     }
 </style>

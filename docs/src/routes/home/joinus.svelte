@@ -10,15 +10,15 @@
     }}
     slash={{ color: "purple" }}
 >
-    <div id="abt" class="tr">
-        <p class="tc">
-            Quality tech-based mentorship via personalised modules to candidates
-            from underrepresented backgrounds 👨🏻‍🏫
-        </p>
+    <div id="abt" class="tr p20">
+        <!-- <p class="tc"> -->
+        Quality tech based mentorship via personalised modules to candidates from
+        underrepresented backgrounds 👨🏻‍🏫
+        <!-- </p> -->
     </div>
-    <div class="p20 tl" id="join">
+    <div class="p5 tl" id="join">
         <div class="tc">
-            <div class="fw3 m10" id="joinus">JOIN US ❤️</div>
+            <div class="fw3 m2" id="joinus">JOIN US ❤️</div>
             <div>
                 <Button size="lg" type="secondary">Volunteer</Button>
                 <Button size="lg" type="primary">Candidate</Button><br />
@@ -45,7 +45,7 @@
     }
     @media (max-width: 600px) {
         #joinus {
-            font-size: 2rem;
+            font-size: 1.75rem;
         }
         #abt {
             padding: 0;

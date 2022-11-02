@@ -308,6 +308,10 @@ textarea:focus {
     position: absolute !important
 }
 
+.p-stx {
+    position: sticky !important
+}
+
 .p-fix {
     position: fixed !important
 }

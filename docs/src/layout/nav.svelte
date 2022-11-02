@@ -1,4 +1,4 @@
-<nav class="p-fix w-100 blur">
+<nav class="p-stx w-100 p-rel">
     <div class="nav">
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
@@ -32,11 +32,8 @@
         }
     }
     nav {
-        animation: 0.4s slideIn 5s ease-in-out forwards;
+        animation: 0.4s slideIn 4s ease-in-out forwards;
         transform: translateY(-50px);
-        --sz: 8px;
-        --bg: #fffa;
-        top: 0;
         z-index: 10;
     }
     .nav {
@@ -44,11 +41,8 @@
         height: 0;
         width: 100%;
         will-change: transform;
-        color: black;
-
-        background-color: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(2em);
-        backdrop-filter: blur(2em);
+        color: #fff;
+        font-weight: 400;
 
         & .nav-header {
             display: inline;
@@ -77,7 +71,7 @@
     }
 
     .nav > .nav-links > a:hover {
-        background-color: rgba(0, 0, 0, 0.3);
+        background: #fff6;
     }
 
     .nav > #nav-check {
@@ -102,7 +96,7 @@
             display: block;
             width: 25px;
             height: 7px;
-            border-top: 2px solid black;
+            border-top: 2px solid white;
         }
         .nav > .nav-links {
             position: absolute;
