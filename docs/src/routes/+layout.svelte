@@ -1,17 +1,9 @@
 <script>
-    import Nav from "../components/nav.svelte";
+    import Nav from "../layout/nav.svelte";
 </script>
 
 <main class="app">
     <Nav />
-
-    <style>
-        section {
-            width: 100vw;
-            min-height: calc(100vh - 4rem);
-            padding: 2rem 0;
-        }
-    </style>
 
     <div id="content">
         <slot />
@@ -49,5 +41,8 @@
     }
     footer {
         width: calc(100% - 20px);
+    }
+    ul {
+        list-style-type: none;
     }
 </style>

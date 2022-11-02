@@ -1,4 +1,4 @@
-<nav class="p-fix w-100 o-50 blur">
+<nav class="p-fix w-100 blur">
     <div class="nav">
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
@@ -13,10 +13,10 @@
         </div>
 
         <div class="nav-links">
-            <a href="">Get Mentorship</a>
-            <a href="">Be a Mentor</a>
-            <a href="">Join Us!</a>
-            <a href="">Meet the Team</a>
+            <a href="/candidate">Get Mentorship</a>
+            <a href="/mentor">Be a Mentor</a>
+            <a href="/volunteer">Join Us!</a>
+            <a href="/team">Meet the Team</a>
         </div>
     </div>
 </nav>
@@ -35,12 +35,9 @@
         animation: 0.4s slideIn 5s ease-in-out forwards;
         transform: translateY(-50px);
         --sz: 8px;
-        --bg: #fff8;
+        --bg: #fffa;
         top: 0;
         z-index: 10;
-        &:hover {
-            opacity: 1;
-        }
     }
     .nav {
         display: block;

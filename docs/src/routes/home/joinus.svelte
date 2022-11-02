@@ -1,10 +1,15 @@
 <script>
-    export let getAngle;
-
+    import Section from "../../layout/section.svelte";
     import Button from "../../components/button.svelte";
 </script>
 
-<section class="f-col j-bw slash" style="--angle:{getAngle() + 'deg'};">
+<Section
+    main={{
+        style: "",
+        className: `f-col j-bw slash`,
+    }}
+    slash={{ color: "purple" }}
+>
     <div id="abt" class="tr">
         <p class="tc">
             Quality tech-based mentorship via personalised modules to candidates
@@ -21,7 +26,7 @@
             </div>
         </div>
     </div>
-</section>
+</Section>
 
 <style>
     #abt {

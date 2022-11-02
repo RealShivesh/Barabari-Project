@@ -1,10 +1,17 @@
 <script>
-    export let getAngle;
+    import Section from "../../layout/section.svelte";
 </script>
 
-<section
-    class="hero w-100 h-100 fade tc p-rel slash"
-    style="--color:var(--yellow);--angle:{180 - getAngle() + 'deg'};"
+<Section
+    container={{
+        className: "",
+        style: "background-image: url(/images/landing.webp)",
+    }}
+    main={{
+        style: "",
+        className: `w-100 h-100 fade tc p-rel`,
+    }}
+    slash={{ color: "yellow", offset: true }}
 >
     <div id="hi" class="fade-up">
         <span>Hi! <span id="wave">👋</span></span>
@@ -18,7 +25,7 @@
         src="/icons/barabari.png"
         alt="logo"
     />
-</section>
+</Section>
 
 <style>
     @keyframes wave {
@@ -63,6 +70,7 @@
     }
     #hi,
     #weare {
+        color: #888;
         text-shadow: #ffffff 3px 3px 0px, rgba(128, 128, 0, 0.2) 6px 6px 0px;
         padding-left: 20px;
         font-size: 128px;
