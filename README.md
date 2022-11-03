@@ -1,5 +1,5 @@
 <div align="center">
-<img height="300px" width="auto" src="./docs/static/favicon.png" />
+<img height="300px" width="auto" src="./static/favicon.png" />
 
 [The Barabari Project](https://plutoniumm.github.io/BarabariProject/)
 
