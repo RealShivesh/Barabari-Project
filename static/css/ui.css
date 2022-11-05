@@ -48,3 +48,13 @@
     border: 1px solid #888;
     color: #fff
 }
+
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}

@@ -8,13 +8,11 @@
         style: "",
         className: `f-col j-bw slash`,
     }}
-    slash={{ color: "purple" }}
+    slash={{ color: "purple", offset: 0 }}
 >
     <div id="abt" class="tr p20">
-        <!-- <p class="tc"> -->
-        Quality tech based mentorship via personalised modules to candidates from
-        underrepresented backgrounds 👨🏻‍🏫
-        <!-- </p> -->
+        Quality tech based mentorship via personalised modules to candidates
+        from underrepresented backgrounds 👨🏻‍🏫
     </div>
     <div class="p5 tl" id="join">
         <div class="tc">
@@ -34,7 +32,7 @@
         max-width: 50%;
         margin-left: auto;
         color: #fff;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     #join {
         max-width: 50%;

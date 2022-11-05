@@ -238,6 +238,10 @@ textarea:focus {
     width: 100%
 }
 
+.w-75 {
+    width: 75%
+}
+
 .w-50 {
     width: 50%
 }
@@ -270,6 +274,10 @@ textarea:focus {
     height: 100%
 }
 
+.h-75 {
+    height: 75%
+}
+
 .h-50 {
     height: 50%
 }
@@ -291,45 +299,49 @@ textarea:focus {
 }
 
 .f {
-    display: flex !important
+    display: flex !important;
 }
 
 .f-col {
     display: flex !important;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .fw {
     display: flex !important;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .p-abs {
-    position: absolute !important
+    position: absolute !important;
 }
 
 .p-stx {
-    position: sticky !important
+    position: sticky !important;
 }
 
 .p-fix {
-    position: fixed !important
+    position: fixed !important;
 }
 
 .p-rel {
-    position: relative !important
+    position: relative !important;
+}
+
+.d-b {
+    display: block;
 }
 
 .d-n {
-    display: none
+    display: none;
 }
 
 .d-ib {
-    display: inline-block
+    display: inline-block;
 }
 
 .d-u {
-    display: unset
+    display: unset;
 }
 
 .hover {

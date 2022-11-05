@@ -18,7 +18,7 @@
         <slot />
     </div>
 
-    <footer class="p10" style="background: var(--yellow);">
+    <footer class="p10 w-100" style="background: var(--yellow);">
         <div class="w-100 tc">
             <h2>The Barabari Project</h2>
             <h3><i>Universal Access To Quality Jobs</i></h3>
@@ -47,9 +47,6 @@
     #content {
         z-index: 1;
         scroll-behavior: smooth;
-    }
-    footer {
-        width: calc(100% - 20px);
     }
     ul {
         list-style-type: none;

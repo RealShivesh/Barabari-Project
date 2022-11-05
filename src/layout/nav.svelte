@@ -2,7 +2,7 @@
     <div class="nav">
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
-            <div class="nav-title">The Barabari Project</div>
+            <a href="/" class="nav-title d-b">The Barabari Project</a>
         </div>
         <div class="nav-btn p-abs">
             <label for="nav-check">
