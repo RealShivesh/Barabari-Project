@@ -31,10 +31,7 @@
 
             <input class="d-b mx-a rpm-5" type="submit" />
 
-            <p
-                class="fw3 desktop-only"
-                style="margin-top:4rem;font-size: 1.5em;color:#888a;"
-            >
+            <p id="postmsg" class="fw3">
                 We promise to get back as soon as possible!
             </p>
         </form>
@@ -76,7 +73,15 @@
         height: 100vh;
         min-width: 300px;
     }
+    #postmsg {
+        margin-top: 4rem;
+        font-size: 1.5em;
+        color: #888a;
+    }
     @media (max-width: 600px) {
+        #postmsg {
+            font-size: 1em;
+        }
         form {
             font-size: 0.8rem;
         }
@@ -86,6 +91,7 @@
         input,
         textarea {
             margin: 0.8rem auto !important;
+            width: 90% !important;
         }
     }
 </style>

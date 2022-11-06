@@ -14,21 +14,17 @@
         }
     </style>
 
-    <div id="content">
+    <div id="content" style="z-index: 0;">
         <slot />
     </div>
 
-    <footer class="p10 w-100" style="background: var(--yellow);">
+    <hr class="w-50 o-50" />
+    <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
         <div class="w-100 tc">
-            <h2>The Barabari Project</h2>
-            <h3><i>Universal Access To Quality Jobs</i></h3>
+            <h3>The Barabari Project</h3>
+            <h4><i>Universal Access To Quality Jobs</i></h4>
         </div>
         <div class="f j-ar fw">
-            <ul>
-                <li>Links1</li>
-                <li>Links2</li>
-                <li>Links3</li>
-            </ul>
             <ul>
                 <li>Links1</li>
                 <li>Links2</li>
@@ -50,5 +46,6 @@
     }
     ul {
         list-style-type: none;
+        padding: 0;
     }
 </style>

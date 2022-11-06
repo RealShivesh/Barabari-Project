@@ -47,5 +47,6 @@
     svg {
         margin-top: 5%;
         height: 85%;
+        max-width: 90%;
     }
 </style>

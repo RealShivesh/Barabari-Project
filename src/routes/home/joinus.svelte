@@ -10,7 +10,7 @@
     }}
     slash={{ color: "purple", offset: 0 }}
 >
-    <div id="abt" class="tr p20">
+    <div id="abt" class="tr" style="padding: 10px 20px 0 0">
         Quality tech based mentorship via personalised modules to candidates
         from underrepresented backgrounds 👨🏻‍🏫
     </div>
@@ -23,6 +23,7 @@
                 <Button size="lg" type="action">Mentor</Button>
             </div>
         </div>
+        <div class="heightControl">&nbsp;</div>
     </div>
 </Section>
 
@@ -41,7 +42,24 @@
     #joinus {
         font-size: 4.75rem;
     }
+    .heightControl {
+        height: 200px;
+    }
+    @media (max-width: 1000px) {
+        #abt {
+            font-size: 2rem;
+        }
+        #joinus {
+            font-size: 3rem;
+        }
+        .heightControl {
+            height: 100px;
+        }
+    }
     @media (max-width: 600px) {
+        .heightControl {
+            height: 20px;
+        }
         #joinus {
             font-size: 1.75rem;
         }

@@ -1,6 +1,10 @@
+<script>
+    let checked;
+</script>
+
 <nav class="p-stx w-100 p-rel">
     <div class="nav">
-        <input type="checkbox" id="nav-check" />
+        <input type="checkbox" id="nav-check" bind:checked />
         <div class="nav-header">
             <a href="/" class="nav-title d-b">The Barabari Project</a>
         </div>
@@ -12,7 +16,7 @@
             </label>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" on:click={() => (checked = !checked)}>
             <a href="/candidate">Get Mentorship</a>
             <a href="/mentor">Be a Mentor</a>
             <a href="/volunteer">Join Us!</a>
