@@ -13,6 +13,18 @@
             width: 100vw;
             min-height: 100vh;
         }
+        .arrow {
+            transform: translateX(-7px);
+            animation: 1.5s wobble ease infinite;
+            background: #fff;
+            color: var(--purple);
+            padding: 2px 15px;
+        }
+        @media (prefers-reduced-motion) {
+            .arrow {
+                animation: none;
+            }
+        }
     </style>
 
     <div class="p-abs hero fade-right" style="background: var(--purple);">

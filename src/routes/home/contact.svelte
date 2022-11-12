@@ -7,8 +7,14 @@
 
 <section class="f fw">
     <div class="lhs p-rel">
-        Quality tech based mentorship via personalised modules to candidates
-        from underrepresented backgrounds 👨🏻‍🏫
+        <div
+            id="teacher"
+            class="p-abs tr rx2"
+            style="font-size: 1.25rem;top:10%;right:5%;background:#0002;z-index:10;max-width:min(400px, 90%);border-right: 3px solid var(--purple);padding-right:10px;"
+        >
+            Quality tech based mentorship via personalised modules to candidates
+            from underrepresented backgrounds
+        </div>
         <India />
     </div>
     <div class="rhs f-col j-ct">

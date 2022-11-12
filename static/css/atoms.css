@@ -13,6 +13,10 @@ body {
     box-sizing: border-box;
 }
 
+.greene {
+    border: 1px solid green;
+}
+
 a,
 a:visited,
 a:hover {
