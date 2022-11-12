@@ -1,18 +1,8 @@
 <script>
-    import Section from "../../layout/section.svelte";
+    import Button from "../../components/button.svelte";
 </script>
 
-<Section
-    container={{
-        className: "",
-        style: "background-image: url(/images/landing.webp)",
-    }}
-    main={{
-        style: "",
-        className: `w-100 h-100 fade tc p-rel`,
-    }}
-    slash={{ color: "yellow", offset: 180 }}
->
+<section id="landing" class="p-rel">
     <div id="bio" class="p10 tr p-abs" style="bottom:5px;right:5px;">
         <div class="fw3 m10" id="joinus">
             Addressing private sector inequality by personalized tech mentorship
@@ -20,63 +10,44 @@
             gender).
         </div>
     </div>
-</Section>
+    <div class="p-abs f w-100 tc" style="bottom: 0;left:0;">
+        <a href="/volunteer" style="background:var(--yellow);color:#000;">
+            Volunteer <br />
+            <span>Help Us Out</span>
+        </a>
+        <a href="/candidate" style="background:var(--purple);color:#fff;">
+            Candidate <br />
+            <span>Level Up Now!</span>
+        </a>
+        <a class="blur" href="/mentor" style="background:#0008;color:#fff;">
+            Mentor <br />
+            <span>Be a mentor</span>
+        </a>
+    </div>
+</section>
 
-<style>
-    @keyframes wave {
-        0% {
-            transform: rotate(0deg);
+<style lang="scss">
+    #landing {
+        background-image: url(/images/landing.webp);
+    }
+    a {
+        display: block;
+        padding: 20px 0;
+        cursor: pointer;
+        width: 33.33%;
+        font-size: 2rem;
+        font-weight: 600;
+        transition: opacity 0.2s ease;
+        span {
+            font-weight: 200;
+            font-size: 1.5rem;
         }
-        10% {
-            transform: rotate(14deg);
-        }
-        20% {
-            transform: rotate(-8deg);
-        }
-        30% {
-            transform: rotate(14deg);
-        }
-        40% {
-            transform: rotate(-4deg);
-        }
-        50% {
-            transform: rotate(10deg);
-        }
-        60% {
-            transform: rotate(0deg);
-        } /* Reset for the last half to pause */
-        100% {
-            transform: rotate(0deg);
+        &:hover {
+            opacity: 0.8;
         }
     }
-    #wave {
-        display: inline-block;
-        font-size: 0.8em;
-        animation: 2.5s wave infinite;
-        transform-origin: 70% 70%;
-    }
-    #logo {
-        --delay: 4s;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        height: 50vh;
-        border-radius: 300px;
-    }
-    #hi,
-    #weare {
-        color: #888;
-        text-shadow: #ffffff 3px 3px 0px, rgba(128, 128, 0, 0.2) 6px 6px 0px;
-        padding-left: 20px;
-        font-size: 128px;
-        text-align: left;
-        width: auto;
-    }
+
     @media (max-width: 600px) {
-        #hi,
-        #weare {
-            font-size: 64px;
-        }
         #bio {
             max-width: 75%;
         }

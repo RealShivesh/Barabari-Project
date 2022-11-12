@@ -7,6 +7,8 @@
 
 <section class="f fw">
     <div class="lhs p-rel">
+        Quality tech based mentorship via personalised modules to candidates
+        from underrepresented backgrounds 👨🏻‍🏫
         <India />
     </div>
     <div class="rhs f-col j-ct">

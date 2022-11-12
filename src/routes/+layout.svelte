@@ -15,10 +15,7 @@
         }
     </style>
 
-    <div
-        class="p-abs"
-        style="top:0;left:0;height:100vh;width:100vw;overflow:hidden;background:var(--yellow);z-index:1;"
-    >
+    <div class="p-abs hero fade-right" style="background: var(--purple);">
         <Landing />
     </div>
     <div id="content" style="z-index: 0;">
@@ -54,5 +51,34 @@
     ul {
         list-style-type: none;
         padding: 0;
+    }
+
+    @keyframes hero {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        99% {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(50px);
+            opacity: 0;
+            display: none;
+        }
+    }
+    .hero {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        z-index: 1;
+
+        opacity: 1;
+        animation: 0.5s hero ease forwards;
+        animation-delay: 6.1s;
     }
 </style>

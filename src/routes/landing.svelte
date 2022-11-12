@@ -1,20 +1,18 @@
 <script>
 </script>
 
-<div class="w-100 h-100 fade tc p-rel" style="color:var(--purple)">
-    <div id="hi" class="fade-up">
+<div
+    class="w-100 h-100 fade tc p-rel"
+    style="color:var(--purple);margin-top:20px;"
+>
+    <div id="hi" class="fade-right">
         <span>Hi! <span id="wave">👋</span></span>,
-        <span id="weare" class="fade-up o-0" style="--delay: 2s;">we are</span>
+        <span class="fade-right o-0" style="--delay: 2s;">we are</span>
     </div>
-    <img
-        id="logo"
-        class="fade o-0 p-abs"
-        src="/icons/barabari.png"
-        alt="logo"
-    />
+    <img id="logo" class="o-0 p-abs" src="/icons/barabari.png" alt="logo" />
 </div>
 
-<style>
+<style lang="scss">
     @keyframes wave {
         0% {
             transform: rotate(0deg);
@@ -47,30 +45,40 @@
         animation: 2.5s wave infinite;
         transform-origin: 70% 70%;
     }
+    @keyframes slideOut {
+        0% {
+            opacity: 1;
+            transform: translate(-50%, -60%);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(calc(-50% + 100px), -60%);
+        }
+    }
     #logo {
-        --delay: 4s;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -60%);
         height: 50vh;
         border-radius: 300px;
+
+        animation: 0.2s fade 4s ease forwards, 0.5s slideOut 6s ease forwards;
     }
-    #hi,
-    #weare {
-        color: #888;
-        text-shadow: #ffffff 3px 3px 0px, rgba(128, 128, 0, 0.2) 6px 6px 0px;
+    #hi {
+        color: var(--yellow);
+        text-shadow: rgba(0, 0, 0, 0.2) 6px 6px 0px;
+        padding-top: 20px;
         padding-left: 20px;
         font-size: 128px;
         text-align: left;
         width: auto;
+        span {
+            white-space: nowrap;
+        }
     }
     @media (max-width: 600px) {
-        #hi,
-        #weare {
+        #hi {
             font-size: 64px;
-        }
-        #bio {
-            max-width: 75%;
         }
     }
 </style>

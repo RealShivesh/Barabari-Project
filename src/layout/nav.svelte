@@ -40,8 +40,7 @@
         }
     }
     nav {
-        animation: 0.4s slideIn ease-in-out forwards;
-        --delay: 4s;
+        animation: 0.4s slideIn 6s ease-in-out forwards;
         transform: translateY(-50px);
         z-index: 10;
     }
