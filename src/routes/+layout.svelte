@@ -1,8 +1,9 @@
 <script>
     import Nav from "../layout/nav.svelte";
+    import Landing from "./landing.svelte";
 </script>
 
-<main class="app">
+<main class="app p-rel">
     <Nav />
     <style>
         section {
@@ -14,6 +15,12 @@
         }
     </style>
 
+    <div
+        class="p-abs"
+        style="top:0;left:0;height:100vh;width:100vw;overflow:hidden;background:var(--yellow);z-index:1;"
+    >
+        <Landing />
+    </div>
     <div id="content" style="z-index: 0;">
         <slot />
     </div>

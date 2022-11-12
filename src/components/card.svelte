@@ -1,13 +1,8 @@
 <script>
     export let type = "purple";
-
-    const typr = (typ) => {
-        if (typ === "purple") return "--purple-grad";
-        if (typ === "yellow") return "--yellow";
-    };
 </script>
 
-<div class="rx10 card p10" style={`background: var(${typr(type)});`}>
+<div class="rpm-10 card {type}">
     <slot />
 </div>
 
@@ -15,5 +10,12 @@
     .card {
         min-width: 200px;
         min-height: 100px;
+    }
+    .purple {
+        background: var(--purple-grad);
+        color: #fff;
+    }
+    .yellow {
+        background: var(--yellow);
     }
 </style>

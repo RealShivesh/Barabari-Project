@@ -1,26 +1,18 @@
 <script>
-    import Section from "../../layout/section.svelte";
 </script>
 
-<Section
-    container={{
-        className: "",
-        style: "background-image: url(/images/landing.webp)",
-    }}
-    main={{
-        style: "",
-        className: `w-100 h-100 fade tc p-rel`,
-    }}
-    slash={{ color: "yellow", offset: 180 }}
->
-    <div id="bio" class="p10 tr p-abs" style="bottom:5px;right:5px;">
-        <div class="fw3 m10" id="joinus">
-            Addressing private sector inequality by personalized tech mentorship
-            for candidates from the underprivileged(by caste, income, and
-            gender).
-        </div>
+<div class="w-100 h-100 fade tc p-rel" style="color:var(--purple)">
+    <div id="hi" class="fade-up">
+        <span>Hi! <span id="wave">👋</span></span>,
+        <span id="weare" class="fade-up o-0" style="--delay: 2s;">we are</span>
     </div>
-</Section>
+    <img
+        id="logo"
+        class="fade o-0 p-abs"
+        src="/icons/barabari.png"
+        alt="logo"
+    />
+</div>
 
 <style>
     @keyframes wave {

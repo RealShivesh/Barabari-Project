@@ -6,11 +6,11 @@
 </script>
 
 {#if href}
-    <a href class="button m10 {type + ' ' + size}" {...$$restProps}>
+    <a href class="button rx5 m10 {type + ' ' + size}" {...$$restProps}>
         <slot />
     </a>
 {:else}
-    <button class="button m10 {type + ' ' + size}" {...$$restProps}>
+    <button class="button rx5 m10 {type + ' ' + size}" {...$$restProps}>
         <slot />
     </button>
 {/if}

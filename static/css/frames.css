@@ -5,6 +5,11 @@
     animation-delay: var(--delay);
 }
 
+.wait {
+    --delay: 0s;
+    animation-delay: var(--delay);
+}
+
 .fade {
     --delay: 0s;
     will-change: opacity;

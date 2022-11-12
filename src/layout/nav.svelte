@@ -3,7 +3,7 @@
 </script>
 
 <nav class="p-stx w-100 p-rel">
-    <div class="nav">
+    <div class="nav wait">
         <input type="checkbox" id="nav-check" bind:checked />
         <div class="nav-header">
             <a href="/" class="nav-title d-b">The Barabari Project</a>
@@ -16,7 +16,11 @@
             </label>
         </div>
 
-        <div class="nav-links" on:click={() => (checked = !checked)}>
+        <div
+            class="nav-links"
+            on:keyup={console.log}
+            on:click={() => (checked = !checked)}
+        >
             <a href="/candidate">Get Mentorship</a>
             <a href="/mentor">Be a Mentor</a>
             <a href="/volunteer">Join Us!</a>
@@ -36,7 +40,8 @@
         }
     }
     nav {
-        animation: 0.4s slideIn 4s ease-in-out forwards;
+        animation: 0.4s slideIn ease-in-out forwards;
+        --delay: 4s;
         transform: translateY(-50px);
         z-index: 10;
     }

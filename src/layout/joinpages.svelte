@@ -1,5 +1,5 @@
 <script>
-    export let title = "Title!";
+    export const title = "Title!";
 </script>
 
 <div class="w-100">
@@ -17,7 +17,6 @@
     <h1 class="w-100 m0 p20" style="background:var(--yellow)">
         Get Mentorship!
     </h1>
-
     <div class="limit mx-a">
         <slot />
     </div>
@@ -32,6 +31,6 @@
         font-size: 1.2rem;
         color: #fff;
         max-width: 1000px;
-        padding: 6rem 0 4rem 0;
+        padding: 5rem 0 4rem 0;
     }
 </style>

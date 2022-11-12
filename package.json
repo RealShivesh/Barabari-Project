@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && echo 'PUT THE META TAGS'",
 		"deploy": "npx gh-pages -d build -t true && rm -rf build .svelte*",
 		"preview": "vite preview"
 	},
