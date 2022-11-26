@@ -6,7 +6,7 @@
 <Layout title="Work with us!">
     <Card>
         <div class="f-col j-bw" style="font-size: 2rem;">
-            <div>Join the Errort!</div>
+            <div>Join the Effort!</div>
             <div class="f j-bw">
                 <div style="max-width: 66%;">
                     We can use all the help we get. Help us out!

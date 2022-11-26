@@ -1,5 +1,5 @@
 <script>
-    export const title = "Title!";
+    export let title = "Title!";
 </script>
 
 <div class="w-100">
@@ -15,7 +15,7 @@
         </p>
     </div>
     <h1 class="w-100 m0 p20" style="background:var(--yellow)">
-        Get Mentorship!
+        {title}
     </h1>
     <div class="limit mx-a">
         <slot />
@@ -25,6 +25,7 @@
 <style>
     .limit {
         max-width: 1000px;
+        overflow: hidden;
     }
     p {
         line-height: 2em;
