@@ -33,7 +33,10 @@
         <div class="fw4 desc">{person.desc}</div>
         <p class:tc={current} class="fw4 caps">{person.caps}</p>
         {#if current}
-            <p class="fade-up tj w-100" style="line-height: 2em;">
+            <p
+                class="fade-up tj w-100"
+                style="line-height: 2em;overflow-y:scroll;"
+            >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 sunt iste adipisci voluptatibus natus sed maxime voluptates
                 delectus, aut, porro corporis. Alias vel molestias rerum,
@@ -51,7 +54,6 @@
 
 <style lang="scss">
     .x {
-        pointer-events: all !important;
         height: 44px;
         width: 44px;
         line-height: 44px;
@@ -67,7 +69,7 @@
         }
     }
     .person {
-        z-index: 1;
+        z-index: 0;
         border: 0.5px solid #8888;
         aspect-ratio: 1 !important;
         --sz: 33%;
@@ -75,6 +77,7 @@
         overflow: hidden;
         cursor: pointer;
         --bg: #fff;
+        overflow-y: scroll;
         background: var(--bg);
         will-change: transform;
         transition: transform 0.2s ease;
@@ -82,12 +85,14 @@
         &:nth-child(even) {
             --bg: #ddd;
         }
-        * {
+        .desc,
+        .name,
+        img,
+        .caps {
             pointer-events: none;
         }
         .body {
-            overflow-y: scroll;
-            max-width: 1000px;
+            max-width: 991px;
         }
         img {
             background: rgba(var(--col), 0.66);
@@ -121,6 +126,16 @@
         padding-top: 80px !important;
         &:hover {
             transform: none;
+        }
+    }
+    @media (max-width: 991px) {
+        .person {
+            --sz: 50%;
+        }
+    }
+    @media (max-width: 600px) {
+        .person {
+            --sz: 100%;
         }
     }
 </style>

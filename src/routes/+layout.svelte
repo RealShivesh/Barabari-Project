@@ -1,4 +1,6 @@
 <script>
+    import { page } from "$app/stores";
+
     import Nav from "../layout/nav.svelte";
     import Landing from "./landing.svelte";
 </script>
@@ -27,9 +29,11 @@
         }
     </style>
 
-    <div class="p-abs hero fade-right" style="background: var(--purple);">
-        <Landing />
-    </div>
+    {#if $page.url.pathname === "/"}
+        <div class="p-abs hero fade-right" style="background: var(--purple);">
+            <Landing />
+        </div>
+    {/if}
     <div id="content" style="z-index: 0;">
         <slot />
     </div>
@@ -42,12 +46,12 @@
         </div>
         <div class="f j-ar fw">
             <ul>
-                <li>Links1</li>
-                <li>Links2</li>
-                <li>Links3</li>
+                <li><a href="/candidate">Candidate</a></li>
+                <li><a href="/volunteer">Volunteer</a></li>
+                <li><a href="/mentor">Mentor</a></li>
             </ul>
             <ul>
-                <li>Links1</li>
+                <li><a href="/team">Team</a></li>
                 <li>Links2</li>
                 <li>Links3</li>
             </ul>
@@ -63,6 +67,9 @@
     ul {
         list-style-type: none;
         padding: 0;
+    }
+    li {
+        padding: 5px;
     }
 
     @keyframes hero {

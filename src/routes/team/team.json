@@ -1,0 +1,32 @@
+[
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "name": "Harhar G Mahadev",
+        "desc": "Founder",
+        "caps": "Resident Dictator & Owner of means of productions"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "name": "Mrs, Anjali",
+        "desc": "Ops & Des",
+        "caps": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, molestias!"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "name": "Mrs, Vishnupriya",
+        "desc": "Ops & Des",
+        "caps": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, molestias!"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "name": "Manav",
+        "desc": "Exists",
+        "caps": "Tech Support, I can fix your wifi"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "name": "Unnamed Superhero",
+        "desc": "Does Super Work",
+        "caps": "Superhero is a trademarked word by Marvel & DC :_)"
+    }
+]
