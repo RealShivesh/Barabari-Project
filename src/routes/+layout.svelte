@@ -16,11 +16,19 @@
             min-height: 100vh;
         }
         .arrow {
-            transform: translateX(-7px);
+            transform: translateX(-7px) scale(1);
             animation: 1.5s wobble ease infinite;
             background: #fff;
             color: var(--purple);
-            padding: 2px 15px;
+            padding: 2px 12px;
+            border: 1px solid #fff;
+            cursor: pointer;
+            transition: transform 0.15s ease-in-out;
+        }
+        .arrow:hover {
+            transform: translateX(-7px) scale(1.1);
+            border: 1px solid var(--purple);
+            color: var(--purple);
         }
         @media (prefers-reduced-motion) {
             .arrow {
@@ -39,7 +47,7 @@
     </div>
 
     <hr class="w-50 o-50" />
-    <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
+    <!-- <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
         <div class="w-100 tc">
             <h3>The Barabari Project</h3>
             <h4><i>Universal Access To Quality Jobs</i></h4>
@@ -56,7 +64,7 @@
                 <li>Links3</li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 </main>
 
 <style>
@@ -64,13 +72,13 @@
         z-index: 1;
         scroll-behavior: smooth;
     }
-    ul {
+    /* ul {
         list-style-type: none;
         padding: 0;
     }
     li {
         padding: 5px;
-    }
+    } */
 
     @keyframes hero {
         0% {
@@ -98,6 +106,6 @@
 
         opacity: 1;
         animation: 0.5s hero ease forwards;
-        animation-delay: 6.1s;
+        animation-delay: 4.1s;
     }
 </style>

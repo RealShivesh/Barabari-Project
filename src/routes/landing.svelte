@@ -7,7 +7,7 @@
 >
     <div id="hi" class="fade-right">
         <span>Hi! <span id="wave">👋</span></span>,
-        <span class="fade-right o-0" style="--delay: 2s;">we are</span>
+        <span class="fade-right o-0" style="--delay: 1s;">we are</span>
     </div>
     <img id="logo" class="o-0 p-abs" src="/icons/barabari.png" alt="logo" />
 </div>
@@ -62,7 +62,7 @@
         height: 50vh;
         border-radius: 300px;
 
-        animation: 0.2s fade 4s ease forwards, 0.5s slideOut 6s ease forwards;
+        animation: 0.2s fade 3s ease forwards, 0.5s slideOut 4s ease forwards;
     }
     #hi {
         color: var(--yellow);
