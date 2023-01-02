@@ -15,10 +15,17 @@
             width: 100vw;
             min-height: 100vh;
         }
+        section:not(:first-of-type) {
+            overflow: hidden;
+        }
         .arrow {
             transform: translateX(-7px) scale(1);
             animation: 1.5s wobble ease infinite;
             background: #fff;
+            max-height: 1.42em;
+            position: absolute;
+            right: 5px;
+            bottom: 10px;
             color: var(--purple);
             padding: 2px 12px;
             border: 1px solid #fff;
@@ -47,24 +54,16 @@
     </div>
 
     <hr class="w-50 o-50" />
-    <!-- <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
+    <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
         <div class="w-100 tc">
             <h3>The Barabari Project</h3>
             <h4><i>Universal Access To Quality Jobs</i></h4>
         </div>
         <div class="f j-ar fw">
-            <ul>
-                <li><a href="/candidate">Candidate</a></li>
-                <li><a href="/volunteer">Volunteer</a></li>
-                <li><a href="/mentor">Mentor</a></li>
-            </ul>
-            <ul>
-                <li><a href="/team">Team</a></li>
-                <li>Links2</li>
-                <li>Links3</li>
-            </ul>
+            <img src="/icons/barabari.svg" alt="logo" />
+            <div>thebarabariproject@gmail.com</div>
         </div>
-    </footer> -->
+    </footer>
 </main>
 
 <style>

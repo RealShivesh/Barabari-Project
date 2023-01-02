@@ -18,7 +18,7 @@
         <div class="f-col j-bw" style="font-size: 2rem;">
             <div>Join the Effort!</div>
             <div class="f j-bw">
-                <div style="max-width: 66%;">
+                <div style="max-width: 66%;font-size: 1.5rem;margin-top:10px;">
                     We can use all the help we get. Help us out!
                 </div>
                 <a

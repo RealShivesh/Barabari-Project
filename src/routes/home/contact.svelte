@@ -1,49 +1,35 @@
 <script>
     let innerWidth = 300;
-    import India from "./india.svelte";
 </script>
 
 <svelte:window bind:innerWidth />
 
-<section class="f fw">
-    <div class="lhs p-rel">
-        <div
-            id="teacher"
-            class="p-abs tr rx2"
-            style="font-size: 1.25rem;top:10%;right:5%;background:#0002;z-index:10;max-width:min(400px, 90%);border-right: 3px solid var(--purple);padding-right:10px;"
-        >
-            Quality tech based mentorship via personalised modules to candidates
-            from underrepresented backgrounds
+<section class="f-col j-ct">
+    <form class="w-75 mx-a h-75 tc p20 p-rel" action="">
+        <div id="heart" class="fw3" style="font-size: 2.5rem;">
+            <span class="d-b" style="font-size: 2em;">💌</span>
+            Have a Query?
         </div>
-        <India />
-    </div>
-    <div class="rhs f-col j-ct">
-        <form class="w-75 mx-a h-75 tc p20 p-rel" action="">
-            <div id="heart" class="fw3" style="font-size: 2.5rem;">
-                <span class="d-b" style="font-size: 2em;">💌</span>
-                Have a Query?
-            </div>
-            <input
-                class="rpm-5"
-                type="text"
-                placeholder="Email"
-                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-            />
-            <textarea
-                class="rpm-5"
-                placeholder="Message"
-                id="msg"
-                cols="auto"
-                rows={innerWidth < 600 ? 5 : 10}
-            />
+        <input
+            class="rpm-5"
+            type="text"
+            placeholder="Email"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+        />
+        <textarea
+            class="rpm-5"
+            placeholder="Message"
+            id="msg"
+            cols="auto"
+            rows={innerWidth < 600 ? 5 : 10}
+        />
 
-            <input class="d-b mx-a rpm-5" type="submit" />
+        <input class="d-b mx-a rpm-5" type="submit" />
 
-            <p id="postmsg" class="fw3">
-                We promise to get back as soon as possible!
-            </p>
-        </form>
-    </div>
+        <p id="postmsg" class="fw3">
+            We promise to get back as soon as possible!
+        </p>
+    </form>
 </section>
 
 <style lang="scss">

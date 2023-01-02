@@ -1,6 +1,8 @@
 <script>
     import Layout from "../../layout/joinpages.svelte";
     import Card from "../../components/card.svelte";
+
+    import { gform } from "$lib/data";
 </script>
 
 <Layout title="Get Mentorship!">
@@ -13,7 +15,7 @@
         If you want to get mentorship, training and referrals from working professionals
         from top tech companies, fill in the form below
     </div>
-    <Card slot="body">
+    <!-- <Card slot="body">
         <div class="f-col j-bw" style="font-size: 2rem;">
             <div>Take the first step to your future!</div>
             <div class="f j-bw">
@@ -28,5 +30,18 @@
                 </a>
             </div>
         </div>
-    </Card>
+    </Card> -->
+    <iframe
+        slot="body"
+        src={gform("1My36LieG8RNe5816RYZ594Yur8mgCmV6t_ntYA6MrVU")}
+        title="form"
+        marginwidth="0">Loading…</iframe
+    >
 </Layout>
+
+<style>
+    iframe {
+        width: 100%;
+        min-height: 500px;
+    }
+</style>

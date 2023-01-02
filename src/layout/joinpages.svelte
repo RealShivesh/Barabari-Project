@@ -10,7 +10,9 @@
         </p>
     </div>
     <h1 class="w-100 m0 p20" style="background:var(--yellow)">{title}</h1>
-    <div class="limit mx-a"><slot name="body" /></div>
+    <div class="limit mx-a">
+        <slot name="body" />
+    </div>
 </div>
 
 <style>

@@ -8,8 +8,8 @@
             style="max-width:min(600px, 80%);border-left: 3px solid var(--yellow); padding-left: 20px;background: #0008;"
         >
             Addressing private sector inequality by personalized tech mentorship
-            for candidates from the underprivileged(by caste, income, and
-            gender).
+            for candidates from the underprivileged sections(by caste, income,
+            and gender).
         </div>
     </div>
     <div class="p-abs f w-100 tc fade-up" style="bottom: 0;left:0;--delay:6s;">

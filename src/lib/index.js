@@ -14,32 +14,27 @@ export const debounce = function ( func, wait, immediate ) {
     };
 };
 
-let intersectionObserver;
 
+let intersectionObserver;
 function ensureIntersectionObserver () {
     if ( intersectionObserver ) return;
 
     intersectionObserver = new IntersectionObserver(
-        ( entries ) => {
-            entries.forEach( entry => {
-                const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
-                entry.target.dispatchEvent( new CustomEvent( eventName ) );
-            } );
-        }
+        ( entries ) => entries.forEach( entry =>
+            entry.target.dispatchEvent(
+                new CustomEvent( entry.isIntersecting ? 'view' : 'hide' )
+            )
+        )
     );
-}
+};
 
-export default function viewport ( element ) {
+export function viewport ( element ) {
     ensureIntersectionObserver();
     intersectionObserver.observe( element );
-    return {
-        destroy () {
-            intersectionObserver.unobserve( element );
-        }
-    }
-}
 
-/* <h1 use:viewport
-        on:enterViewport={() => console.log('enter!')}
-        on:exitViewport={() => console.log('exit!')}
->Hello World!</h1> */
+    return { destroy () { intersectionObserver.unobserve( element ); } }
+};
+
+export const viewHandle = ( e ) => {
+    console.log( e );
+}

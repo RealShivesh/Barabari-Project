@@ -2,12 +2,14 @@
     export let type = "purple";
 </script>
 
-<div class="rpm-10 card {type}">
+<div class="p10 rx10 card p-rel {type}">
     <slot />
 </div>
 
 <style>
     .card {
+        margin: 10px auto;
+        max-width: 600px;
         min-width: 200px;
         min-height: 100px;
     }

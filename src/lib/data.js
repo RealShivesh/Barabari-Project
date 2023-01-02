@@ -1,0 +1,1 @@
+export const gform = ( id ) => `https://docs.google.com/forms/d/e/${ id }/viewform?embedded=true`
