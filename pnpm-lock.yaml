@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/adapter-static': 1.0.0
   '@sveltejs/kit': 1.0.1
+  flamethrower-router: 0.0.0-meme.12
   i18next: ^22.4.6
   marked: 4.2.3
   sass: ^1.57.1
@@ -14,6 +15,7 @@ specifiers:
   vite-imagetools: 4.0.11
 
 dependencies:
+  flamethrower-router: 0.0.0-meme.12
   i18next: 22.4.6
   marked: 4.2.3
   sass: 1.57.1
@@ -579,6 +581,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
+
+  /flamethrower-router/0.0.0-meme.12:
+    resolution: {integrity: sha512-PWcNrjzItwk61RTk/SbbKJNcAgl6qCXH8xkZjGjUGV/dgKAnURci+k+Yk8emubUQWTdAd1kSqujy0VRjoeEgxg==}
+    dev: false
 
   /fs-constants/1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}

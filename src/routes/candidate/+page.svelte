@@ -12,8 +12,8 @@
         backgrounds, underprivileged caste sections, and underrepresented gender
         backgrounds.
         <br /><br />
-        If you want to get mentorship, training and referrals from working professionals
-        from top tech companies, fill in the form below
+        If you want to get <b> mentorship, training and referrals</b> from working
+        professionals from top tech companies, fill in the form below
     </div>
     <!-- <Card slot="body">
         <div class="f-col j-bw" style="font-size: 2rem;">

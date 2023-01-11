@@ -9,7 +9,8 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
         "name": "Mrs, Anjali",
         "desc": "Ops & Des",
-        "caps": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, molestias!"
+        "caps": "Being an obsessed thinker, a music fanatic and a terribly insane flapper (for some) defines me",
+        "md": "Being an obsessed thinker, a music fanatic and a terribly insane flapper (for some) defines me. Professionally, progress is the sound I love. Presently majoring in Political Science from IPCW, I'm known to be a bit of a geek (guilty)! <br/> <br/> As someone who could never get tired of advocating equity I stand for gender equality, mental health and peaceful diplomacy in creating a super sustainable future"
     },
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
@@ -18,7 +19,7 @@
         "caps": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, molestias!"
     },
     {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
+        "img": "/images/team/manav.png",
         "name": "Manav",
         "desc": "Exists",
         "caps": "Tech Support, I can fix your wifi"
@@ -27,6 +28,6 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Generic-person.svg/480px-Generic-person.svg.png",
         "name": "Unnamed Superhero",
         "desc": "Does Super Work",
-        "caps": "Superhero is a trademarked word by Marvel & DC :_)"
+        "caps": "A stand in for all the people who help us out with nothing in return whenever we need something for Barabari"
     }
 ]

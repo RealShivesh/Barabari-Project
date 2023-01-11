@@ -13,6 +13,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"flamethrower-router": "0.0.0-meme.12",
 		"i18next": "^22.4.6",
 		"marked": "4.2.3",
 		"sass": "^1.57.1",

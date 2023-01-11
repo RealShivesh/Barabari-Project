@@ -16,9 +16,8 @@
                 much barabari :)
             </p>
             <article class="w-100 mx-a f fw">
-                {#each Team as person}
-                    <Personal color="purple" {person} />
-                    <!-- <Personal color="yellow-hl" {person} /> -->
+                {#each Team as person, index}
+                    <Personal {index} color="purple" {person} />
                 {/each}
             </article>
         </section>
@@ -30,8 +29,8 @@
         >
             <h2>Barabari Mentors</h2>
             <article class="w-100 mx-a f fw">
-                {#each Mentors as person}
-                    <Personal color="yellow-hl" {person} />
+                {#each Mentors as person, index}
+                    <Personal {index} minimal color="yellow-hl" {person} />
                 {/each}
             </article>
         </section>

@@ -53,15 +53,22 @@
         <slot />
     </div>
 
-    <hr class="w-50 o-50" />
-    <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em">
-        <div class="w-100 tc">
-            <h3>The Barabari Project</h3>
-            <h4><i>Universal Access To Quality Jobs</i></h4>
-        </div>
-        <div class="f j-ar fw">
-            <img src="/icons/barabari.svg" alt="logo" />
-            <div>thebarabariproject@gmail.com</div>
+    <hr class="w-50 o-25" />
+    <footer
+        class="p10 w-100 tc p5"
+        style="background: var(--yellow);font-size:0.8em"
+    >
+        <div class="w-100 f j-ct">
+            <img
+                class="p0 m10"
+                height="48px"
+                src="/icons/barabari.svg"
+                alt="logo"
+            />
+            <div class="p5" style="font-size:1.1em">
+                <div class="fw7 p5">thebarabariproject@gmail.com</div>
+                <div class="p5"><i>Universal Access To Quality Jobs</i></div>
+            </div>
         </div>
     </footer>
 </main>
@@ -71,13 +78,6 @@
         z-index: 1;
         scroll-behavior: smooth;
     }
-    /* ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        padding: 5px;
-    } */
 
     @keyframes hero {
         0% {

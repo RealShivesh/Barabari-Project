@@ -11,8 +11,8 @@
         backgrounds.
         <br /><br />
         Volunteer with us in various roles from all the different teams like the
-        content team, operations team, recruitment team and many more. you'll find
-        more details in the form below
+        <b> content team, operations team, recruitment team and many more.</b> you'll
+        find more details in the form below
     </div>
     <Card slot="body">
         <div class="f-col j-bw" style="font-size: 2rem;">

@@ -1,12 +1,16 @@
 <script>
+    import { marked } from "marked";
     export let //
+        minimal = false,
         color = "purple",
+        index = 0,
         person;
 
     let //
         hold,
         current = false;
     const flip = ({ target }) => {
+        if (minimal) return 0;
         if (target.classList.contains("x")) current = false;
         else current = true;
 
@@ -18,32 +22,30 @@
             hold.classList.add("p-rel");
         }
     };
+
+    const getBg = () =>
+        index % 2 === 0 ? "#fff" : color === "purple" ? "#eef" : "#ffe";
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
     class="p20 tc f-col p-rel person"
     class:active={current}
     bind:this={hold}
     on:click={flip}
-    style="--col:var(--{color}-rgb)"
+    style={`--col:var(--${color}-rgb);--bg:${getBg()};`}
 >
     <img class="mx-a" src={person.img} alt={person.name} />
     <div class="mx-a body">
         <div class="fw7 p10 name">{person.name}</div>
         <div class="fw4 desc">{person.desc}</div>
         <p class:tc={current} class="fw4 caps">{person.caps}</p>
-        {#if current}
+        {#if current && !minimal}
             <p
                 class="fade-up tj w-100"
                 style="line-height: 2em;overflow-y:scroll;"
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                sunt iste adipisci voluptatibus natus sed maxime voluptates
-                delectus, aut, porro corporis. Alias vel molestias rerum,
-                architecto maiores nesciunt, modi sapiente eos praesentium
-                perspiciatis inventore! Quam saepe doloremque odio
-                exercitationem minus laborum, reiciendis, debitis sint a
-                possimus est eum quis molestiae?
+                {@html marked.parse(person?.md || "")}
             </p>
         {/if}
     </div>
@@ -70,21 +72,16 @@
     }
     .person {
         z-index: 0;
-        border: 0.5px solid #8888;
         aspect-ratio: 1 !important;
         --sz: 33%;
         width: var(--sz);
         overflow: hidden;
         cursor: pointer;
-        --bg: #fff;
         overflow-y: scroll;
         background: var(--bg);
         will-change: transform;
         transition: transform 0.2s ease;
         transform: scale(1);
-        &:nth-child(even) {
-            --bg: #ddd;
-        }
         .desc,
         .name,
         img,
@@ -93,11 +90,14 @@
         }
         .body {
             max-width: 991px;
+            overflow-y: hidden;
         }
         img {
             background: rgba(var(--col), 0.66);
             height: 150px;
             width: 150px;
+            object-position: center center;
+            object-fit: contain;
             border-radius: 100px;
             margin-bottom: 10px;
 
