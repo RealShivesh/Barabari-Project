@@ -16,15 +16,12 @@
             </label>
         </div>
 
-        <div
-            class="nav-links"
-            on:keyup={console.log}
-            on:click={() => (checked = !checked)}
-        >
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="nav-links" on:click={() => (checked = !checked)}>
             <a href="/candidate">Get Mentorship</a>
             <a href="/mentor">Be a Mentor</a>
             <a href="/volunteer">Join Us!</a>
-            <a href="/team">Meet the Team</a>
+            <!-- <a href="/team">Meet the Team</a> -->
         </div>
     </div>
 </nav>
@@ -40,7 +37,7 @@
         }
     }
     nav {
-        animation: 0.4s slideIn 4s ease-in-out forwards;
+        animation: 0.4s slideIn 1s ease-in-out forwards;
         transform: translateY(-50px);
         z-index: 10;
     }

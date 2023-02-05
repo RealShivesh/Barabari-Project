@@ -13,15 +13,15 @@
         </div>
     </div>
     <div class="p-abs f w-100 tc fade-up" style="bottom: 0;left:0;--delay:6s;">
-        <a href="/volunteer" style="background:var(--yellow);color:#000;">
+        <a href="/volunteer" style="background:#222;color:#fff;">
             Volunteer <br />
             <span>Help Us Out</span>
         </a>
-        <a href="/candidate" style="background:var(--purple);color:#fff;">
+        <a href="/candidate" style="background:var(--yellow);color:#000;">
             Candidate <br />
             <span>Level Up Now!</span>
         </a>
-        <a class="blur" href="/mentor" style="background:#0008;color:#fff;">
+        <a class="blur" href="/mentor" style="background:#222;color:#fff;">
             Mentor <br />
             <span>Be a mentor</span>
         </a>
@@ -39,13 +39,15 @@
         width: 33.33%;
         font-size: 2rem;
         font-weight: 600;
-        transition: opacity 0.2s ease;
+        transform: translateY(0);
+        transition: all 0.2s ease;
         span {
             font-weight: 200;
             font-size: 0.75em;
         }
         &:hover {
-            opacity: 0.8;
+            transform: translateY(-5px);
+            opacity: 0.66;
         }
     }
     #bio {

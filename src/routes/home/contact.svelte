@@ -5,7 +5,7 @@
 <svelte:window bind:innerWidth />
 
 <section class="f-col j-ct">
-    <form class="w-75 mx-a h-75 tc p20 p-rel" action="">
+    <form class="mx-a h-75 tc p20 p-rel" action="">
         <div id="heart" class="fw3" style="font-size: 2.5rem;">
             <span class="d-b" style="font-size: 2em;">💌</span>
             Have a Query?
@@ -34,6 +34,8 @@
 
 <style lang="scss">
     form {
+        transform: scale(0.8);
+        width: 50%;
         font-size: 1rem;
         margin-top: -2rem;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23),
@@ -61,22 +63,24 @@
             color: #fff;
         }
     }
-    .lhs,
-    .rhs {
-        flex: 1;
-        height: 100vh;
-        min-width: 300px;
-    }
     #postmsg {
         margin-top: 4rem;
         font-size: 1.5em;
         color: #888a;
+    }
+    @media (max-width: 991px) {
+        form {
+            transform: scale(0.9);
+            width: 75%;
+            font-size: 0.8rem;
+        }
     }
     @media (max-width: 600px) {
         #postmsg {
             font-size: 1em;
         }
         form {
+            width: 99%;
             font-size: 0.8rem;
         }
         #heart {

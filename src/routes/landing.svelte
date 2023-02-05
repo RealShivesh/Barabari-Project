@@ -1,10 +1,7 @@
 <script>
 </script>
 
-<div
-    class="w-100 h-100 fade tc p-rel"
-    style="color:var(--purple);margin-top:20px;"
->
+<div class="w-100 h-100 fade tc p-rel" style="color:#222;margin-top:20px;">
     <div id="hi" class="fade-right">
         <span>Hi! <span id="wave">👋</span></span>,
         <span class="fade-right o-0" style="--delay: 1s;">we are</span>
@@ -62,7 +59,7 @@
         height: 50vh;
         border-radius: 300px;
 
-        animation: 0.2s fade 3s ease forwards, 0.5s slideOut 4s ease forwards;
+        animation: 0.2s fade 1s ease forwards, 0.5s slideOut 1.5s ease forwards;
     }
     #hi {
         color: var(--yellow);

@@ -3,6 +3,29 @@
 
     import Nav from "../layout/nav.svelte";
     import Landing from "./landing.svelte";
+
+    const social = Object.freeze([
+        {
+            name: "GMail",
+            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/envelope.svg",
+            href: "mailto:thebarabariproject@gmail.com",
+        },
+        {
+            name: "Instagram",
+            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/square-instagram.svg",
+            href: "https://www.instagram.com/thebarabariproject/",
+        },
+        {
+            name: "Twitter",
+            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/square-twitter.svg",
+            href: "https://twitter.com/BarabariProject",
+        },
+        {
+            name: "LinkedIn",
+            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg",
+            href: "https://www.linkedin.com/company/the-barabari-project/",
+        },
+    ]);
 </script>
 
 <main class="app p-rel">
@@ -23,9 +46,6 @@
             animation: 1.5s wobble ease infinite;
             background: #fff;
             max-height: 1.42em;
-            position: absolute;
-            right: 5px;
-            bottom: 10px;
             color: var(--purple);
             padding: 2px 12px;
             border: 1px solid #fff;
@@ -45,7 +65,7 @@
     </style>
 
     {#if $page.url.pathname === "/"}
-        <div class="p-abs hero fade-right" style="background: var(--purple);">
+        <div class="p-abs hero fade-right" style="background: #222;">
             <Landing />
         </div>
     {/if}
@@ -53,21 +73,27 @@
         <slot />
     </div>
 
-    <hr class="w-50 o-25" />
     <footer
         class="p10 w-100 tc p5"
         style="background: var(--yellow);font-size:0.8em"
     >
-        <div class="w-100 f j-ct">
-            <img
-                class="p0 m10"
-                height="48px"
-                src="/icons/barabari.svg"
-                alt="logo"
-            />
-            <div class="p5" style="font-size:1.1em">
-                <div class="fw7 p5">thebarabariproject@gmail.com</div>
-                <div class="p5"><i>Universal Access To Quality Jobs</i></div>
+        <div class="mx-a" style="max-width: 300px;">
+            <div class="fw4" style="font-size:2rem;">The Barabari Project</div>
+            <div class="p10" style="font-size:1.1em">
+                <i>Universal Access To Quality Jobs</i>
+            </div>
+            <div class="f j-ar">
+                {#each social as soc}
+                    <a href={soc.href} class="p5">
+                        <img
+                            class="rx5 icon"
+                            height="36px"
+                            width="36px"
+                            src={soc.icon}
+                            alt={soc.name}
+                        />
+                    </a>
+                {/each}
             </div>
         </div>
     </footer>
@@ -94,6 +120,9 @@
             display: none;
         }
     }
+    .icon {
+        object-fit: contain;
+    }
     .hero {
         pointer-events: none;
         top: 0;
@@ -105,6 +134,6 @@
 
         opacity: 1;
         animation: 0.5s hero ease forwards;
-        animation-delay: 4.1s;
+        animation-delay: 1.5s;
     }
 </style>
