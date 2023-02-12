@@ -1,7 +1,19 @@
 {
+	"name": "barabariproject",
+	"version": "1.0.1",
+	"author": {
+		"name": "Barabari Project",
+		"email": "support@barabariproject.org"
+	},
+	"license": "MIT",
+	"keywords": [
+		"ngo",
+		"education",
+		"website"
+	],
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && echo 'PUT THE META TAGS'",
+		"build": "vite build",
 		"deploy": "npx gh-pages -d build -t true && rm -rf build .svelte*",
 		"preview": "vite preview"
 	},
@@ -14,11 +26,11 @@
 	"type": "module",
 	"dependencies": {
 		"flamethrower-router": "0.0.0-meme.12",
-		"i18next": "^22.4.6",
+		"i18next": "22.4.6",
 		"marked": "4.2.3",
-		"sass": "^1.57.1",
+		"sass": "1.57.1",
 		"svelte-i18n": "3.4.0",
-		"svelte-i18next": "^1.2.2",
+		"svelte-i18next": "1.2.2",
 		"svelte-preprocess": "4.10.7",
 		"vite-imagetools": "4.0.11"
 	}

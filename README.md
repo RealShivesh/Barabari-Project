@@ -1,16 +1,17 @@
 <div align="center">
-<img height="00px" width="auto" src="./static/favicon.png" />
-
-[The Barabari Project](https://plutoniumm.github.io/BarabariProject/)
-
-</div>
+<img height="200px" width="200px" src="./static/favicon.png" />
+<br />
+<br />
+<a href="https://barabariproject.org">
+<img src="https://img.shields.io/github/repo-size/Barabari-Project/Barabari-Project?color=%23fadf0b&style=for-the-badge&label=The+Barabari+Project" />
+</a>
 
 <hr/>
+</div>
 
-# Todo
-- Use IntersectionObserver in `/lib` as `use:enterViewport` & `use:exitViewport`
+
+## Todo
 - Absent Hindi Lang
-- Fix Gmail Icon for uniformity
 - i18n
   - https://www.npmjs.com/package/svelte-i18next
   - https://github.com/NishuGoel/svelte-i18next/tree/main/example

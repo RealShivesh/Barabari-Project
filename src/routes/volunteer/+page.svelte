@@ -1,7 +1,12 @@
 <script>
+    import Meta from "../../components/meta.svelte";
     import Layout from "../../layout/joinpages.svelte";
     import Background from "../../../static/images/hero/volunteer.jpg?w=1080&h=610&fit=cover&webp";
 </script>
+
+<svelte:head>
+    <Meta title="Work with us!" />
+</svelte:head>
 
 <Layout title="Work with us!">
     <div slot="desc">
@@ -29,8 +34,7 @@
             style="z-index:-1000;filter:blur(5px)"
         />
         <a
-            href="https://docs.google.com/forms/d/1utKmc4y1SJWNH0rzQSlTBcItT6IBiHkeb6Ivz5u3mKo/
-        "
+            href="https://forms.gle/JHENNYSPp2SqDvEM9"
             target="_blank"
             rel="noreferrer"
             class="blur fw4 CTA tc m20 p20 p-rel f j-ar"

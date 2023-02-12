@@ -1,7 +1,12 @@
 <script>
+    import Meta from "../../components/meta.svelte";
     import Layout from "../../layout/joinpages.svelte";
     import Background from "../../../static/images/hero/mentor.jpg?w=1080&h=610&fit=cover&webp";
 </script>
+
+<svelte:head>
+    <Meta title="Become a Mentor" />
+</svelte:head>
 
 <Layout title="Become a Mentor!">
     <div slot="desc">

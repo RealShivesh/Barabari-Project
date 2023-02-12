@@ -30,7 +30,7 @@
         </a>
         <a class="blur" href="/mentor" style="background:#222;color:#fff;">
             Mentor <br />
-            <span>Be a mentor</span>
+            <span>Help a Candidate</span>
         </a>
     </div>
 </section>

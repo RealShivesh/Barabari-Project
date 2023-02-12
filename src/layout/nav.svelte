@@ -76,12 +76,7 @@
         animation: 0.4s slideIn 1s ease-in-out forwards;
         transform: translateY(-50px);
         z-index: 10;
-        max-width: min(1200px, 100%);
-    }
-    @media (min-width: 600px) {
-        nav {
-            padding: 0 10px;
-        }
+        padding: 0 20px;
     }
     .nav {
         display: block;
@@ -120,6 +115,7 @@
         display: inline-block;
         padding: 13px 10px 13px 10px;
         text-decoration: none;
+        text-shadow: 0 0 4px #000, 0 0 2px #000;
     }
 
     .nav > .nav-links > a:hover {
