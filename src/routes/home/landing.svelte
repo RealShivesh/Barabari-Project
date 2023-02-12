@@ -1,7 +1,14 @@
 <script>
+    import Background from "../../../static/images/landing.webp?w=1920&h=1080&fit=cover&webp";
 </script>
 
 <section id="landing" class="p-rel">
+    <img
+        src={Background}
+        alt=""
+        class="p-abs"
+        style="height: 100vh;width:100vw;object-fit:cover;"
+    />
     <div id="bio" class="w-100 tc p-abs fade-down">
         <div
             class="tl rx2"
@@ -29,9 +36,6 @@
 </section>
 
 <style lang="scss">
-    #landing {
-        background-image: url(/images/landing.webp);
-    }
     a {
         display: block;
         padding: 20px 0;

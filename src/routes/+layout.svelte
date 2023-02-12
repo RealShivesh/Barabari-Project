@@ -7,22 +7,22 @@
     const social = Object.freeze([
         {
             name: "GMail",
-            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/envelope.svg",
+            icon: "/icons/gmail.svg",
             href: "mailto:thebarabariproject@gmail.com",
         },
         {
             name: "Instagram",
-            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/square-instagram.svg",
+            icon: "/icons/insta.svg",
             href: "https://www.instagram.com/thebarabariproject/",
         },
         {
             name: "Twitter",
-            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/square-twitter.svg",
+            icon: "/icons/twitter.svg",
             href: "https://twitter.com/BarabariProject",
         },
         {
             name: "LinkedIn",
-            icon: "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg",
+            icon: "/icons/lin.svg",
             href: "https://www.linkedin.com/company/the-barabari-project/",
         },
     ]);
@@ -134,6 +134,6 @@
 
         opacity: 1;
         animation: 0.5s hero ease forwards;
-        animation-delay: 1.5s;
+        animation-delay: 2.5s;
     }
 </style>

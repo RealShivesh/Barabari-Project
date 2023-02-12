@@ -1,32 +1,41 @@
 <script>
     import Layout from "../../layout/joinpages.svelte";
+    import Background from "../../../static/images/hero/volunteer.jpg?w=1080&h=610&fit=cover&webp";
 </script>
 
 <Layout title="Work with us!">
     <div slot="desc">
-        The Barabari Project is a non-profit working to provide quality training
-        and mentorship to candidates from low-income categories, rural
-        backgrounds, underprivileged caste sections, and underrepresented gender
-        backgrounds.
-        <br /><br />
+        <span class="desktop-only">
+            The Barabari Project is a non-profit working to provide quality
+            training and mentorship to candidates from low-income categories,
+            rural backgrounds, underprivileged caste sections, and
+            underrepresented gender backgrounds.
+            <br /><br />
+        </span>
         Volunteer with us in various roles from all the different teams like the
         <b> content team, operations team, recruitment team and many more.</b> you'll
         find more details in the form below
     </div>
 
-    <div class="hero f-col j-ct p-rel h-100" slot="max">
-        <style>
-        </style>
+    <div
+        class="hero f-col j-ct p-rel h-100"
+        slot="max"
+        style="overflow: hidden;"
+    >
+        <img
+            src={Background}
+            alt="candidate"
+            class="p-abs w-100 h-100"
+            style="z-index:-1000;filter:blur(5px)"
+        />
         <a
             href="https://docs.google.com/forms/d/1utKmc4y1SJWNH0rzQSlTBcItT6IBiHkeb6Ivz5u3mKo/
         "
             target="_blank"
             rel="noreferrer"
-            class="blur fw4 w-33 tc m20 p20 p-rel f j-ar"
+            class="blur fw4 CTA tc m20 p20 p-rel f j-ar"
         >
-            <div style="font-size:2.25rem;line-height:1em;align-self:center;">
-                Apply Here!
-            </div>
+            <div style="align-self:center;">Apply Here!</div>
             <svg viewBox="0 0 32 32" height="48">
                 <path d="M11 29 24 16 11 3" />
             </svg>
@@ -36,11 +45,9 @@
         "
             target="_blank"
             rel="noreferrer"
-            class="blur fw4 w-33 tc m20 p20 p-rel f j-ar"
+            class="blur fw4 CTA tc m20 p20 p-rel f j-ar"
         >
-            <div style="font-size:2.25rem;line-height:1em;align-self:center;">
-                Read More!
-            </div>
+            <div style="align-self:center;">Read More!</div>
             <svg viewBox="0 0 32 32" height="48">
                 <path d="M11 29 24 16 11 3" />
             </svg>
@@ -50,17 +57,21 @@
 
 <style lang="scss">
     .hero {
-        // https://pxhere.com/en/photo/898769
-        background: url("/images/hero/volunteer.jpg");
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
         height: 50vh;
-        object-fit: cover;
     }
     @media (max-width: 768px) {
         .hero {
             height: 90vh;
+        }
+    }
+    .CTA {
+        width: 33.33%;
+        font-size: 2.25rem;
+        line-height: 1em;
+    }
+    @media (max-width: 768px) {
+        .CTA {
+            width: 75%;
         }
     }
     svg {

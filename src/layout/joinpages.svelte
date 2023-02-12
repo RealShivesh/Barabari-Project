@@ -29,6 +29,6 @@
         font-size: 1.2rem;
         color: #fff;
         max-width: 1000px;
-        padding: 5rem 0 4rem 0;
+        padding: 5rem 5px 4rem 5px;
     }
 </style>

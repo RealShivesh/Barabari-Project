@@ -1,12 +1,47 @@
 <script>
+    import { onMount } from "svelte";
+
     let checked;
+    let location = "/";
+
+    onMount(() => (location = window.location.pathname));
+
+    const navItems = [
+        {
+            name: "Get Mentorship",
+            href: "/candidate",
+        },
+        {
+            name: "Be a Mentor",
+            href: "/mentor",
+        },
+        {
+            name: "Volunteer!",
+            href: "/volunteer",
+        },
+    ];
+
+    const navHandler = () => {
+        checked = !checked;
+        setTimeout(() => (location = window.location.pathname), 200);
+    };
 </script>
 
-<nav class="p-stx w-100 p-rel">
+<nav class="p-stx mx-a w-100 p-rel">
     <div class="nav wait">
         <input type="checkbox" id="nav-check" bind:checked />
         <div class="nav-header">
-            <a href="/" class="nav-title d-b">The Barabari Project</a>
+            <a href="/" class="nav-title d-b" on:click={navHandler}>
+                <img
+                    class="p-rel"
+                    src="/favicon.png"
+                    height="22px"
+                    width="22px"
+                    alt=""
+                    style="top:3px;"
+                />
+                The Barabari Project
+            </a>
         </div>
         <div class="nav-btn p-abs">
             <label for="nav-check">
@@ -17,11 +52,12 @@
         </div>
 
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class="nav-links" on:click={() => (checked = !checked)}>
-            <a href="/candidate">Get Mentorship</a>
-            <a href="/mentor">Be a Mentor</a>
-            <a href="/volunteer">Join Us!</a>
-            <!-- <a href="/team">Meet the Team</a> -->
+        <div class="nav-links" on:click={navHandler}>
+            {#each navItems as nav}
+                <a class:active={nav.href === location} href={nav.href}>
+                    {nav.name}
+                </a>
+            {/each}
         </div>
     </div>
 </nav>
@@ -40,6 +76,12 @@
         animation: 0.4s slideIn 1s ease-in-out forwards;
         transform: translateY(-50px);
         z-index: 10;
+        max-width: min(1200px, 100%);
+    }
+    @media (min-width: 600px) {
+        nav {
+            padding: 0 10px;
+        }
     }
     .nav {
         display: block;
@@ -58,6 +100,9 @@
             }
         }
     }
+    .active {
+        background: #fff6;
+    }
 
     .nav > .nav-btn {
         display: none;
@@ -70,6 +115,8 @@
     }
 
     .nav > .nav-links > a {
+        transition: background 0.3s ease-in-out;
+        font-size: 1.2rem;
         display: inline-block;
         padding: 13px 10px 13px 10px;
         text-decoration: none;
@@ -107,7 +154,7 @@
             position: absolute;
             display: block;
             width: 100%;
-            background: var(--yellow);
+            background: #222;
             height: 0px;
             transition: all 0.3s ease-in;
             overflow-y: hidden;
