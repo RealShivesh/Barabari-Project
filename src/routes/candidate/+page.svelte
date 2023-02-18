@@ -33,7 +33,7 @@
             style="z-index:-1000;filter:blur(5px);"
         />
         <a
-            href="https://docs.google.com/forms/d/1utKmc4y1SJWNH0rzQSlTBcItT6IBiHkeb6Ivz5u3mKo/
+            href="https://forms.gle/H3HGYX1BfFvq2Bhs9
         "
             target="_blank"
             rel="noreferrer"
