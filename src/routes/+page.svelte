@@ -40,7 +40,7 @@
         </svg>
         <div class="ccd-text tc p10">
             <b>Mentorship Network:</b> Connecting industry professionals and underprivileged
-            candidates candidates
+            candidates
         </div>
     </div>
     <div class="p10 m20">
