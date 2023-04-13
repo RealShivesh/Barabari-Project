@@ -28,7 +28,7 @@
         slot="max"
         style="overflow: hidden;"
     >
-        <div class="f-col p20 tc mx-a w-100" style="background: #ccc;">
+        <div class="f-col p20 tc mx-a w-100 bg-ccc">
             <div class="fw7">Roles Offered</div>
             {#each roles as role}
                 <hr class="w-33 o-25" />
@@ -47,7 +47,7 @@
         "
             target="_blank"
             rel="noreferrer"
-            class="blur fw4 CTA tc m20 p20 p-rel f j-ar"
+            class="blur-16 bg-fffa fw4 CTA tc m20 p20 p-rel f j-ar"
         >
             <div style="align-self:center;">Apply Here!</div>
             <svg viewBox="0 0 32 32" height="48">
@@ -59,7 +59,7 @@
         "
             target="_blank"
             rel="noreferrer"
-            class="blur fw4 CTA tc m20 p20 p-rel f j-ar"
+            class="blur-16 bg-fffa fw4 CTA tc m20 p20 p-rel f j-ar"
         >
             <div style="align-self:center;">Read More!</div>
             <svg viewBox="0 0 32 32" height="48">
@@ -98,8 +98,6 @@
         }
     }
     a {
-        --sz: 16px;
-        --bg: #fffa;
         left: 10%;
         text-decoration: none;
         color: #000;

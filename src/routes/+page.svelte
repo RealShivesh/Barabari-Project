@@ -1,13 +1,11 @@
 <script>
     import Meta from "../components/meta.svelte";
-
     import Landing from "./home/landing.svelte";
-    import Social from "./home/contact.svelte";
 
     let innerWidth;
 
     let stats = Object.freeze([
-        { name: "Candidates in Training", count: 22 },
+        { name: "In Training", count: 22 },
         { name: "Placed Candidates", count: 6 },
         { name: "Across States", count: 4 },
     ]);
@@ -21,8 +19,8 @@
 
 <Landing />
 
-<div class="p20 sec">
-    <div class="f mx-a j-ar fw" style="max-width: 1000px;">
+<div class="p20 bg-eee">
+    <div class="f mx-a j-ar fwx" style="max-width: 1000px;">
         {#each stats as stat}
             <div class="f-col tc stat m10">
                 <div class="ctr fw5">{stat.count}</div>
@@ -31,7 +29,7 @@
         {/each}
     </div>
 </div>
-<article class="w-100 tc p-rel f-col j-ar" style="background: #222;color:#fff;">
+<article class="w-100 tc p-rel f-col j-ar bg-222 col-fff">
     <div class="p10 m20">
         <svg class="ccd-icon tc p10" viewBox="0 0 512 512">
             <path
@@ -79,9 +77,6 @@
         article {
             height: 100vh;
         }
-    }
-    .sec {
-        background: #eee;
     }
     .stat {
         padding: 30px 0;

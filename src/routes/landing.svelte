@@ -1,9 +1,9 @@
 <script>
 </script>
 
-<div class="w-100 h-100 fade tc p-rel" style="color:#222;margin-top:20px;">
+<div class="w-100 h-100 fade tc p-rel col-222 bg-222" style="margin-top:20px;">
     <div id="hi" class="fade-right">
-        <span>Hi! <span id="wave">👋</span></span>,
+        <span>Hi! <span class="d-ib" id="wave">👋</span></span>,
         <span class="fade-right o-0" style="--delay: 1s;">we are</span>
     </div>
     <img id="logo" class="o-0 p-abs" src="/icons/barabari.png" alt="logo" />
@@ -37,7 +37,6 @@
         }
     }
     #wave {
-        display: inline-block;
         font-size: 0.8em;
         animation: 2.5s wave infinite;
         transform-origin: 70% 70%;

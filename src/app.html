@@ -6,7 +6,7 @@
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 
-	<link rel="stylesheet" href="/css/atoms.css">
+	<link rel="stylesheet" href="/css/unoatoms.css">
 	<link rel="stylesheet" href="/css/frames.css">
 	<link rel="stylesheet" href="/css/ui.css">
 
@@ -21,25 +21,13 @@
 			--indigo: #4c2884;
 			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
 		}
-
-		html,
-		body {
-			width: 100vw;
-			overflow-x: hidden;
-		}
-
-		@media screen and (max-width: 768px) {
-			.desktop-only {
-				display: none;
-			}
-		}
 	</style>
 
 	%sveltekit.head%
 </head>
 
 <body xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<div style="display: contents">
+	<div class="d-c">
 		%sveltekit.body%
 	</div>
 </body>

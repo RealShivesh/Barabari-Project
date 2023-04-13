@@ -1,4 +1,5 @@
 <script>
+    import "uno.css";
     import { page } from "$app/stores";
 
     import Nav from "../layout/nav.svelte";
@@ -65,11 +66,11 @@
     </style>
 
     {#if $page.url.pathname === "/"}
-        <div class="p-abs hero fade-right" style="background: #222;">
+        <div class="p-abs hero z-1 fade-right bg-222">
             <Landing />
         </div>
     {/if}
-    <div id="content" style="z-index: 0;">
+    <div id="content" class="z-1">
         <slot />
     </div>
 
@@ -101,7 +102,6 @@
 
 <style>
     #content {
-        z-index: 1;
         scroll-behavior: smooth;
     }
 
@@ -130,7 +130,6 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        z-index: 1;
 
         opacity: 1;
         animation: 0.5s hero ease forwards;

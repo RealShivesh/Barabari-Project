@@ -27,11 +27,11 @@
     };
 </script>
 
-<nav class="p-stx mx-a w-100 p-rel">
-    <div class="nav wait">
+<nav class="p-stx z-10 mx-a w-100 p-rel">
+    <div class="nav d-b wait">
         <input type="checkbox" id="nav-check" bind:checked />
-        <div class="nav-header">
-            <a href="/" class="nav-title d-b" on:click={navHandler}>
+        <div class="nav-header d-i">
+            <a href="/" class="nav-title d-ib" on:click={navHandler}>
                 <img
                     class="p-rel"
                     src="/favicon.png"
@@ -52,9 +52,13 @@
         </div>
 
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class="nav-links" on:click={navHandler}>
+        <div class="nav-links d-i" on:click={navHandler}>
             {#each navItems as nav}
-                <a class:active={nav.href === location} href={nav.href}>
+                <a
+                    class="d-ib"
+                    class:active={nav.href === location}
+                    href={nav.href}
+                >
                     {nav.name}
                 </a>
             {/each}
@@ -75,11 +79,9 @@
     nav {
         animation: 0.4s slideIn 1s ease-in-out forwards;
         transform: translateY(-50px);
-        z-index: 10;
         padding: 0 20px;
     }
     .nav {
-        display: block;
         height: 0;
         width: 100%;
         will-change: transform;
@@ -87,9 +89,7 @@
         font-weight: 400;
 
         & .nav-header {
-            display: inline;
             & .nav-title {
-                display: inline-block;
                 font-size: 22px;
                 padding: 10px 10px 10px 10px;
             }
@@ -104,7 +104,6 @@
     }
 
     .nav > .nav-links {
-        display: inline;
         float: right;
         font-size: 18px;
     }
@@ -112,7 +111,6 @@
     .nav > .nav-links > a {
         transition: background 0.3s ease-in-out;
         font-size: 1.2rem;
-        display: inline-block;
         padding: 13px 10px 13px 10px;
         text-decoration: none;
         text-shadow: 0 0 4px #000, 0 0 2px #000;

@@ -51,7 +51,7 @@ textarea:focus {
 
 .blur {
     --bg: #2228;
-    --sz: 32px;
+    --sz: 8px;
     background: var(--bg);
     backdrop-filter: blur(var(--sz));
     -webkit-backdrop-filter: blur(var(--sz));

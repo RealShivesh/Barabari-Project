@@ -15,7 +15,7 @@
                 psst: We have roles assigned, but no heirarchy! there is too
                 much barabari :)
             </p>
-            <article class="w-100 mx-a f fw">
+            <article class="w-100 mx-a f fwx">
                 {#each Team as person, index}
                     <Personal {index} color="purple" {person} />
                 {/each}
@@ -28,7 +28,7 @@
             on:view={viewHandle}
         >
             <h2>Barabari Mentors</h2>
-            <article class="w-100 mx-a f fw">
+            <article class="w-100 mx-a f fwx">
                 {#each Mentors as person, index}
                     <Personal {index} minimal color="yellow-hl" {person} />
                 {/each}

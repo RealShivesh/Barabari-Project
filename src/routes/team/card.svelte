@@ -29,7 +29,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-    class="p20 tc f-col p-rel person"
+    class="p20 tc f-col p-rel person z-0"
     class:active={current}
     bind:this={hold}
     on:click={flip}
@@ -71,7 +71,6 @@
         }
     }
     .person {
-        z-index: 0;
         aspect-ratio: 1 !important;
         --sz: 33%;
         width: var(--sz);
