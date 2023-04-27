@@ -3,7 +3,31 @@
     import Layout from "../../layout/joinpages.svelte";
     import Background from "../../../static/images/hero/candidate.jpg?w=1080&h=610&fit=cover&webp";
 
-    const roles = ["SDE (Java)", "Web Developers (React)", "Data Analysts"];
+    const fa = (name) =>
+        `https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/${name}.svg`;
+
+    const cells = [
+        {
+            title: "Our Process",
+            desc: "We provide candidates with personalized 1-on-1 mentoring over a period of 6-8 months to help them gain expertise in their chosen field",
+            icon: fa("gear"),
+        },
+        {
+            title: "Mentors",
+            desc: "Our mentorship community comprises IIT/BITS alumni and tech professionals from Google, Adobe, and Amazon",
+            icon: fa("user"),
+        },
+        {
+            title: "Mentorship Technologies",
+            desc: "We help candidates build a basic to advanced understanding of DSA (Java/C++), Web Dev (React), and Data Analytics (SQL, Python, and Power BI)",
+            icon: fa("book"),
+        },
+        {
+            title: "Past Record",
+            desc: "We have successfully mentored and created a job referral network for 25+ underprivileged candidates across 4 states",
+            icon: fa("check"),
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -18,66 +42,62 @@
             them live their lives with dignity and contribute to the workforce.
             <br /><br />
         </span>
-        Starting from scratch, we provide specialised 1-to-1 mentoring to candidates
-        over a period of <b>6-8 months</b> to help them gain specialisation in their
-        chosen field.
+        <div>Help Us Help You!</div>
     </div>
 
-    <div
-        class="hero f-col j-ct p-rel h-100"
-        slot="max"
-        style="overflow: hidden;"
-    >
-        <div class="f-col p20 tc mx-a w-100 bg-ccc">
-            <div class="fw7">Roles Offered</div>
-            {#each roles as role}
-                <hr class="w-33 o-25" />
-                <div>{role}</div>
+    <div class="hero f fw w-100" slot="max">
+        <div class="lhs f fw">
+            {#each cells as cell}
+                <div class="cell f-col tc j-ct">
+                    <div class="tl f-col p20">
+                        <img
+                            class="rpm-5"
+                            src={cell.icon}
+                            alt=""
+                            height="32"
+                            width="32"
+                            style="background: #fc38;"
+                        />
+                        <p>
+                            <span class="fw7">
+                                {cell.title}
+                            </span> <br />
+                            {cell.desc}
+                        </p>
+                    </div>
+                </div>
             {/each}
         </div>
-
-        <img
-            src={Background}
-            alt="candidate"
-            class="p-abs w-100 h-100"
-            style="z-index:-1000;filter:blur(5px);"
-        />
-        <a
-            href="https://forms.gle/H3HGYX1BfFvq2Bhs9
+        <div class="rhs p-rel">
+            <img
+                src={Background}
+                alt=""
+                class="w-100 p-abs z-0 h-100"
+                style="top:0;left:0;"
+            />
+            <div
+                class="clearfix w-100 h-100 z-1 f-col tc j-ct bg-fff4"
+                style="top:0;left:0;"
+            >
+                <a
+                    href="https://docs.google.com/document/d/1yREF25R3NRavN3GQ7vBQMWeJ3yjUdn44vU-hmyH6U8o/
         "
-            target="_blank"
-            rel="noreferrer"
-            class="blur-16 bg-fffa fw4 CTA tc m20 p20 p-rel f j-ar"
-        >
-            <div style="align-self:center;">Apply Here!</div>
-            <svg viewBox="0 0 32 32" height="48">
-                <path d="M11 29 24 16 11 3" />
-            </svg>
-        </a>
-        <a
-            href="https://docs.google.com/document/d/1HFsNm-zfWFN7buRz3cFbjES9o-u3RjI5oc4l89E0UL8/
-        "
-            target="_blank"
-            rel="noreferrer"
-            class="blur-16 bg-fffa fw4 CTA tc m20 p20 p-rel f j-ar"
-        >
-            <div style="align-self:center;">Read More!</div>
-            <svg viewBox="0 0 32 32" height="48">
-                <path d="M11 29 24 16 11 3" />
-            </svg>
-        </a>
+                    target="_blank"
+                    rel="noreferrer"
+                    class="blur-8 bg-fffa w-66 fw4 tc mx-a p20 p-rel f j-ar"
+                    style="font-size: 1.5em;"
+                >
+                    <div style="align-self:center;">Drop a Referral!</div>
+                    <svg viewBox="0 0 32 32" height="48">
+                        <path d="M11 29 24 16 11 3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
 </Layout>
 
 <style lang="scss">
-    .hero {
-        height: 50vh;
-    }
-    @media (max-width: 768px) {
-        .hero {
-            height: 90vh;
-        }
-    }
     svg {
         width: 32px;
         height: 32px;
@@ -87,24 +107,34 @@
         stroke-linejoin: round;
         stroke-width: 2;
     }
-    .CTA {
-        width: 33.33%;
-        font-size: 2.25rem;
-        line-height: 1em;
+    .lhs,
+    .rhs {
+        width: max(300px, 50%);
+        overflow: hidden;
+        height: auto;
+    }
+    .hero {
+        min-height: 50vh;
     }
     @media (max-width: 768px) {
-        .CTA {
-            width: 75%;
+        .hero {
+            min-height: 90vh;
         }
     }
-    a {
-        left: 10%;
-        text-decoration: none;
-        color: #000;
-        transition: 0.2s box-shadow ease-in-out;
-        &:hover {
-            // light soft white box shadow
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+
+    .lhs img {
+        object-fit: contain;
+    }
+    .rhs img {
+        object-fit: cover;
+    }
+    .cell {
+        width: 50% !important;
+        word-wrap: break-word;
+    }
+    @media (max-width: 768px) {
+        .cell {
+            min-width: 100%;
         }
     }
 </style>

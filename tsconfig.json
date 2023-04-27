@@ -3,13 +3,13 @@
     "compilerOptions": {
         "paths": {
             "$$": [
-                "src/lib/i18n.js"
+                "./src/lib/i18n.js"
             ],
             "$lib": [
-                "src/lib"
+                "./src/lib"
             ],
             "$lib/*": [
-                "src/lib/*"
+                "./src/lib/*"
             ]
         }
     }

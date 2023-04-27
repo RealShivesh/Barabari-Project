@@ -40,6 +40,8 @@ export default defineConfig({
     */
     // mX: margin: Xpx
     [/^m(\d+)$/, ([_, num]) => ({ margin: `${num}px` })],
+    // m-X-Y: margin: Xpx Ypx
+    [/^m-(\d+)-(\d+)$/, ([_, x, y]) => ({ margin: `${x}px ${y}px` })],
     // pX: padding: Xpx
     [/^p(\d+)$/, ([_, num]) => ({ padding: `${num}px` })],
     // rxX: radius: Xpx
@@ -85,5 +87,9 @@ export default defineConfig({
       '-ms-backdrop-filter': `blur(${num}px)`,
       '-moz-backdrop-filter': `blur(${num}px)`,
     })],
+    /*
+                          INDIVIDUAL RULES
+    */
+    ["fw", { "flex-wrap": "wrap" }],
   ],
 });
