@@ -1,6 +1,6 @@
 {
 	"name": "barabariproject",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": {
 		"name": "Barabari Project",
 		"email": "support@barabariproject.org"
@@ -14,7 +14,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"deploy": "npx gh-pages -d build -t true && rm -rf build .svelte*",
+		"deploy:force": "npx gh-pages -d build -t true && rm -rf build .svelte*",
+		"deploy": "echo 'CI is Setup! use deploy:force to force deploy'",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
