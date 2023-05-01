@@ -79,7 +79,11 @@
     nav {
         animation: 0.4s slideIn 1s ease-in-out forwards;
         transform: translateY(-50px);
-        padding: 0 20px;
+    }
+    @media (min-width: 768px) {
+        nav {
+            padding: 0 20px;
+        }
     }
     .nav {
         height: 0;
@@ -111,7 +115,7 @@
     .nav > .nav-links > a {
         transition: background 0.3s ease-in-out;
         font-size: 1.2rem;
-        padding: 13px 10px 13px 10px;
+        padding: 13px;
         text-decoration: none;
         text-shadow: 0 0 4px #000, 0 0 2px #000;
     }
