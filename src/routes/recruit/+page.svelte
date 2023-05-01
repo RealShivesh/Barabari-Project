@@ -37,12 +37,11 @@
 <Layout title="Recruit from Us!">
     <div slot="desc">
         <span class="desktop-only">
-            We, at Barabari, pair with brilliant and tenacious individuals to
-            offer them <b>1-to-1 mentoring</b> and extensive training to help
-            them live their lives with dignity and contribute to the workforce.
-            <br /><br />
+            At Barabari, we offer free tech mentorship to underprivileged
+            candidates to help them live their lives with dignity and contribute
+            to the workforce.
         </span>
-        <div>Help Us Help You!</div>
+        <div class="fw7">Help Us Help You!</div>
     </div>
 
     <div class="hero f fw w-100" slot="max">
@@ -87,7 +86,7 @@
                     class="blur-8 bg-fffa w-66 fw4 tc mx-a p20 p-rel f j-ar"
                     style="font-size: 1.5em;"
                 >
-                    <div style="align-self:center;">Drop a Referral!</div>
+                    <div style="align-self:center;">Get In Touch!</div>
                     <svg viewBox="0 0 32 32" height="48">
                         <path d="M11 29 24 16 11 3" />
                     </svg>
