@@ -13,5 +13,6 @@
 ## Todo
 - Absent Hindi Lang
 - i18n
+  - https://github.com/hymhub/language-translate/blob/main/README_EN.md: Rapidly generate translation files using GTranslate API
   - https://www.npmjs.com/package/svelte-i18next
   - https://github.com/NishuGoel/svelte-i18next/tree/main/example
