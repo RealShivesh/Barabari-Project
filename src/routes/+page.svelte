@@ -1,14 +1,42 @@
 <script>
+    import { onMount } from "svelte";
     import Meta from "../components/meta.svelte";
     import Landing from "./home/landing.svelte";
+    import Papa from "papaparse";
 
     let innerWidth;
 
-    let stats = Object.freeze([
-        { name: "In Training", count: 33 },
-        { name: "Placed Candidates", count: 10 },
-        { name: "Across States", count: 4 },
-    ]);
+    $: stats = [{ name: "Across States", count: 4 }];
+
+    const getStats = async () => {
+        const sheet =
+            "https://docs.google.com/spreadsheets/d/1zWC5x7sAPFKI0ggBy9JErXpHk-F0IMzPI68zPqb70nw/gviz/tq?tqx=out:csv&sheet=Overall%20Data";
+
+        Papa.parse(sheet, {
+            download: true,
+            skipEmptyLines: true,
+            header: true,
+            complete: function (results) {
+                let localStats = [];
+                results.data.forEach((e) => {
+                    const { heading, Total } = e;
+                    localStats.push({ name: heading, count: Total });
+                });
+
+                stats = [stats, localStats].flat(1);
+            },
+            error: function (err) {
+                console.log(err);
+                stats = [
+                    { name: "Across States", count: 4 },
+                    { name: "Candidates in Training", count: 33 },
+                    { name: "Candidates Placed", count: 10 },
+                ];
+            },
+        });
+    };
+
+    onMount(getStats);
 </script>
 
 <svelte:window bind:innerWidth />

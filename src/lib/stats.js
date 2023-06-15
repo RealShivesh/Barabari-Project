@@ -1,9 +1,7 @@
-// download known image and bench it (with cache busting)
-// we will use performance API to get the time
-// this assumes dom is ready
 const internet = () => {
+  const rand = Math.random() * 10e10 | 0; // cache busting
   let [ start, end ] = [ 0, 0 ]
-  const image = "/icons/barabari.png" // INSERT IMAGE HERE
+  const image = "/icons/barabari.png?" + rand; // INSERT IMAGE HERE
   const expectedSize = 4995374 // INSERT EXPECTED SIZE HERE
 
   start = performance.now();
@@ -17,7 +15,9 @@ const internet = () => {
     const prefix = Math.log10( speed ) / 3 | 0;
     const units = [ '', 'k', 'M', 'G' ];
 
+    const speed = ( rate / Math.pow( 10, prefix * 3 ) ).toFixed( 2 ) + units[ prefix ] + 'B/s';
 
+    console.log( "Net Speed: " + speed );
   };
   img.src = image + "?n=" + Math.random();
 

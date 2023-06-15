@@ -6,11 +6,6 @@
 		"email": "support@barabariproject.org"
 	},
 	"license": "MIT",
-	"keywords": [
-		"ngo",
-		"education",
-		"website"
-	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -28,6 +23,7 @@
 	"dependencies": {
 		"i18next": "22.4.15",
 		"marked": "4.3.0",
+		"papaparse": "^5.4.1",
 		"sass": "1.62.1",
 		"svelte-i18n": "3.6.0",
 		"svelte-i18next": "1.2.2",
