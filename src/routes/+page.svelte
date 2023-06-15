@@ -5,8 +5,8 @@
     let innerWidth;
 
     let stats = Object.freeze([
-        { name: "In Training", count: 22 },
-        { name: "Placed Candidates", count: 6 },
+        { name: "In Training", count: 33 },
+        { name: "Placed Candidates", count: 10 },
         { name: "Across States", count: 4 },
     ]);
 </script>
